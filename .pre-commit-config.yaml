@@ -28,9 +28,3 @@ repos:
         entry: isort
         language: system
         types: [python]
-    -   id: vulture
-        name: vulture
-        description: Dead code checker
-        entry: vulture
-        language: system
-        types: [python]

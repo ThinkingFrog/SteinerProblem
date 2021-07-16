@@ -13,7 +13,7 @@ class STPParser:
     _comment_name_mark: str
     _comment_creator_mark: str
     _comment_remark_mark: str
-    
+
     _graph_section_name: str
     _nodes_count_mark: str
     _edges_count_mark: str
@@ -57,7 +57,7 @@ class STPParser:
         comment: Dict[str, str] = dict()
         terminals: List[int] = list()
 
-        with graph_file.open('r') as gf:
+        with graph_file.open("r") as gf:
             for line in gf:
                 if line == self._eof_mark:
                     break
@@ -77,7 +77,7 @@ class STPParser:
                     graph = Graph(splitted[1])
                 if splitted[0] == self._edge_mark:
                     graph.add_edge(splitted[1], splitted[2], splitted[3])
-                
+
                 if splitted[0] == self._terminal_mark:
                     terminals.append(splitted[1])
 
