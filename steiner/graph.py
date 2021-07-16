@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import Dict, List
 
 
 class Graph:
@@ -15,3 +15,7 @@ class Graph:
 
     def add_edge(self, src: int, dest: int, weight: int):
         self._edges.append({"src": src, "dest": dest, "weight": weight})
+
+    def print(self):
+        for edge in self._edges:
+            print(f"E {edge['src']} {edge['dest']} {edge['weight']}")
