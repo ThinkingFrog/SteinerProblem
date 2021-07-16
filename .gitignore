@@ -1,6 +1,7 @@
 # VSCode
 build/
 .vscode/
+!.vscode/launch.json
 
 # Visual Studio
 .vs/
