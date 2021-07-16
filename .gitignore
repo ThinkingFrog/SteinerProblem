@@ -1,0 +1,21 @@
+# VSCode
+build/
+.vscode/
+
+# Visual Studio
+.vs/
+Debug/
+Release/
+
+# Cmake
+Makefile
+*.user
+packages/
+
+# Python
+__pycache__/
+
+# PyCharm
+out/
+.idea/
+*.iml
