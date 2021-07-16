@@ -15,5 +15,6 @@ from steiner.parser import STPParser
 )
 def main(file: Path):
     parser = STPParser()
-    graph, terminals, comment = parser.parse(file)
+    graph, terminals = parser.parse(file)
     graph.print()
+    print(f"Terminals: {terminals}")
