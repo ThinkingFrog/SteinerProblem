@@ -16,5 +16,7 @@ from steiner.parser import STPParser
 def main(file: Path):
     parser = STPParser()
     graph, terminals = parser.parse(file)
-    graph.print()
+    print(f"Graph size is {graph.size()}")
+    for src, dest, weight in graph.edges.data("weight"):
+        print(f"E {src} {dest} {weight}")
     print(f"Terminals: {terminals}")

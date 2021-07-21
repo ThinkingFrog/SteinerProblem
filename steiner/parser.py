@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-from steiner.graph import Graph
+import networkx as nx
 
 
 class STPParser:
@@ -16,14 +16,14 @@ class STPParser:
         self._edge_mark = "E"
         self._terminal_mark = "T"
 
-    def parse(self, graph_file: Path) -> Tuple[Graph, List[int]]:
+    def parse(self, graph_file: Path) -> Tuple[nx.Graph, List[int]]:
         """Method to parse STP files
 
         Args:
             graph_file (Path): Path to stp file
 
         Returns:
-            Graph: Resulting Graph class instance
+            nx.Graph: Resulting networkx.Graph class instance
             List[int]: List of terminal nodes numbers
         """
 
@@ -39,9 +39,9 @@ class STPParser:
                     continue
 
                 if splitted[0] == self._nodes_count_mark:
-                    graph = Graph(splitted[1])
+                    graph = nx.Graph()
                 if splitted[0] == self._edge_mark:
-                    graph.add_edge(splitted[1], splitted[2], splitted[3])
+                    graph.add_edge(splitted[1], splitted[2], weight=splitted[3])
 
                 if splitted[0] == self._terminal_mark:
                     terminals.append(splitted[1])
