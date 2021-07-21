@@ -3,20 +3,25 @@ from pathlib import Path
 import click
 
 from steiner.parser import STPParser
+from steiner.solvers.kmb import SolverKMB
+from steiner.utils.print_graph import print_graph
 
 
 @click.command(name="steiner")
 @click.option(
-    "--file",
-    "-f",
+    "--data",
+    "-d",
     help="Path to file with graph",
     type=click.Path(exists=True, file_okay=True, readable=True, path_type=Path),
     default=None,
 )
-def main(file: Path):
+def main(data: Path):
     parser = STPParser()
-    graph, terminals = parser.parse(file)
-    print(f"Graph size is {graph.size()}")
-    for src, dest, weight in graph.edges.data("weight"):
-        print(f"E {src} {dest} {weight}")
-    print(f"Terminals: {terminals}")
+    graph, terminals = parser.parse(data)
+    print("Parsed graph:")
+    print_graph(graph)
+    print(f"Parsed terminals are: {terminals}")
+
+    print("Start KMB algorithm")
+    solver = SolverKMB()
+    solver.solve(graph, terminals)

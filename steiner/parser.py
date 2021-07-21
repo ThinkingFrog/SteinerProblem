@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import List, Tuple
 
 import networkx as nx
 
@@ -12,7 +12,6 @@ class STPParser:
 
     def __init__(self) -> None:
         self._eof_mark = "EOF"
-        self._nodes_count_mark = "Nodes"
         self._edge_mark = "E"
         self._terminal_mark = "T"
 
@@ -28,6 +27,7 @@ class STPParser:
         """
 
         terminals: List[int] = list()
+        graph = nx.Graph()
 
         with graph_file.open("r") as gf:
             for line in gf:
@@ -38,8 +38,6 @@ class STPParser:
                 if len(splitted) < 2:
                     continue
 
-                if splitted[0] == self._nodes_count_mark:
-                    graph = nx.Graph()
                 if splitted[0] == self._edge_mark:
                     graph.add_edge(splitted[1], splitted[2], weight=int(splitted[3]))
 

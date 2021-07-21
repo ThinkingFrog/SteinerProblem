@@ -1,13 +1,31 @@
 {
     "configurations": [
         {
-            "name": "Python: Module",
+            "name": "Test Graph 1",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--file", "data/steinlib/B/b01.stp"
+                "--data", "data/test/t01.stp"
             ]
-        }
+        },
+        {
+            "name": "Steinlib Graph B01",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/steinlib/B/b01.stp"
+            ]
+        },
+        {
+            "name": "Steinlib Graph B02",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/steinlib/B/b02.stp"
+            ]
+        },
     ]
 }
