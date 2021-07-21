@@ -4,7 +4,7 @@ import click
 
 from steiner.parser import STPParser
 from steiner.solvers.kmb import SolverKMB
-from steiner.utils.print_graph import print_graph
+from steiner.utils.graph import draw_graph, print_graph
 
 
 @click.command(name="steiner")
@@ -20,6 +20,7 @@ def main(data: Path):
     graph, terminals = parser.parse(data)
     print("Parsed graph:")
     print_graph(graph)
+    draw_graph(graph, "Original graph")
     print(f"Parsed terminals are: {terminals}")
 
     print("Start KMB algorithm")
