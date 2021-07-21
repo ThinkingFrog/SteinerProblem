@@ -41,7 +41,7 @@ class STPParser:
                 if splitted[0] == self._nodes_count_mark:
                     graph = nx.Graph()
                 if splitted[0] == self._edge_mark:
-                    graph.add_edge(splitted[1], splitted[2], weight=splitted[3])
+                    graph.add_edge(splitted[1], splitted[2], weight=int(splitted[3]))
 
                 if splitted[0] == self._terminal_mark:
                     terminals.append(splitted[1])
