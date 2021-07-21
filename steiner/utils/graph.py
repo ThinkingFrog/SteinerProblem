@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import networkx as nx
+import networkx.drawing.layout as nxdl
 
 
 def print_graph(graph: nx.Graph) -> None:
@@ -9,6 +10,10 @@ def print_graph(graph: nx.Graph) -> None:
 
 
 def draw_graph(graph: nx.Graph, title: str) -> None:
-    nx.draw_networkx(graph)
+    pos = nxdl.planar_layout(graph)
+    nx.draw_networkx(graph, pos)
+    labels = nx.get_edge_attributes(graph, "weight")
+    nx.draw_networkx_edge_labels(graph, pos, edge_labels=labels)
+
     plt.title(title)
     plt.show()
