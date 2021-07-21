@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple
 
 import networkx as nx
 import networkx.algorithms.tree.mst as nxatm
@@ -10,7 +10,7 @@ class SolverKMB:
     def __init__(self) -> None:
         pass
 
-    def solve(self, graph: nx.Graph, terminals: List[int]) -> nx.Graph:
+    def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
         shortest_paths_graph = nx.Graph()
 
         for term1 in terminals:
@@ -48,3 +48,5 @@ class SolverKMB:
         print_graph(final_mst)
         final_cost = sum([cost for src, dest, cost in final_mst.edges.data("weight")])
         print(f"Final tree cost is {final_cost}")
+
+        return final_mst, final_cost

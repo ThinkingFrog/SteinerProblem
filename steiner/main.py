@@ -24,4 +24,4 @@ def main(data: Path):
 
     print("Start KMB algorithm")
     solver = SolverKMB()
-    solver.solve(graph, terminals)
+    final_tree, final_cost = solver.solve(graph, terminals)
