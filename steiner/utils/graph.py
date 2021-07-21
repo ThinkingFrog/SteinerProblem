@@ -10,7 +10,7 @@ def print_graph(graph: nx.Graph) -> None:
 
 
 def draw_graph(graph: nx.Graph, title: str) -> None:
-    pos = nxdl.planar_layout(graph)
+    pos = nxdl.spring_layout(graph)
     nx.draw_networkx(graph, pos)
     labels = nx.get_edge_attributes(graph, "weight")
     nx.draw_networkx_edge_labels(graph, pos, edge_labels=labels)

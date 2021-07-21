@@ -27,5 +27,14 @@
                 "--data", "data/steinlib/B/b02.stp"
             ]
         },
+        {
+            "name": "Steinlib Graph B03",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/steinlib/B/b03.stp"
+            ]
+        }
     ]
 }
