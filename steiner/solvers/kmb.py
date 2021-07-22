@@ -2,7 +2,6 @@ from typing import List, Tuple
 
 import networkx as nx
 import networkx.algorithms.tree.mst as nxatm
-from networkx.drawing.nx_pylab import draw
 
 from steiner.utils.graph import draw_graph, print_graph
 
