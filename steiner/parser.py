@@ -39,9 +39,11 @@ class STPParser:
                     continue
 
                 if splitted[0] == self._edge_mark:
-                    graph.add_edge(splitted[1], splitted[2], weight=int(splitted[3]))
+                    graph.add_edge(
+                        int(splitted[1]), int(splitted[2]), weight=int(splitted[3])
+                    )
 
                 if splitted[0] == self._terminal_mark:
-                    terminals.append(splitted[1])
+                    terminals.append(int(splitted[1]))
 
         return graph, terminals
