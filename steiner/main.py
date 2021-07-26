@@ -3,8 +3,8 @@ from pathlib import Path
 import click
 
 from steiner.parser import STPParser
-from steiner.solvers.kmb import SolverKMB
-from steiner.utils.graph import draw_graph, print_graph
+from steiner.solvers.s116 import Solver116
+from steiner.utils.graph import show_graph
 
 
 @click.command(name="steiner")
@@ -18,11 +18,9 @@ from steiner.utils.graph import draw_graph, print_graph
 def main(data: Path):
     parser = STPParser()
     graph, terminals = parser.parse(data)
-    print("Parsed graph:")
-    print_graph(graph)
-    draw_graph(graph, "Original graph")
+    show_graph(graph, "Original graph")
     print(f"Parsed terminals are: {terminals}")
 
-    print("Start KMB algorithm")
-    solver = SolverKMB()
+    print("Start 11/6 algorithm")
+    solver = Solver116()
     final_tree, final_cost = solver.solve(graph, terminals)
