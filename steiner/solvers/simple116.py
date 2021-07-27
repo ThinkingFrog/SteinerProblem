@@ -9,7 +9,7 @@ import networkx.classes.function as nxcf
 from steiner.utils.graph import show_graph
 
 
-class Solver116:
+class SolverSimple116:
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
         shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
         show_graph(

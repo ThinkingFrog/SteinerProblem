@@ -3,7 +3,7 @@ from pathlib import Path
 import click
 
 from steiner.parser import STPParser
-from steiner.solvers.s116 import Solver116
+from steiner.solvers.simple116 import SolverSimple116
 from steiner.utils.graph import show_graph
 
 
@@ -22,5 +22,5 @@ def main(data: Path):
     print(f"Parsed terminals are: {terminals}")
 
     print("Start 11/6 algorithm")
-    solver = Solver116()
+    solver = SolverSimple116()
     final_tree, final_cost = solver.solve(graph, terminals)
