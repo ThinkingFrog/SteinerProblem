@@ -19,6 +19,9 @@ class Solver116:
         triples = self.get_triples(shortest_paths_graph)
         print(triples)
 
+        min_vs = self.find_minimizing_v(shortest_paths_graph, triples)
+        print(min_vs)
+
         return None, None
 
     def get_induced_metric_closure(
@@ -46,3 +49,30 @@ class Solver116:
                 triples.remove(tr)
 
         return triples
+
+    def find_minimizing_v(
+        self, graph: nx.Graph, triples: List[Tuple[int]]
+    ) -> List[Tuple[int]]:
+        minimizing_vs = list()
+
+        for tr in triples:
+
+            min_dist = 0
+            min_vertex = 0
+
+            for v in graph.nodes:
+                if v in tr:
+                    continue
+
+                min_paths_sum = (
+                    nx.dijkstra_path_length(graph, v, tr[0])
+                    + nx.dijkstra_path_length(graph, v, tr[1])
+                    + nx.dijkstra_path_length(graph, v, tr[2])
+                )
+                if min_dist == 0 or min_paths_sum < min_dist:
+                    min_dist = min_paths_sum
+                    min_vertex = v
+
+            minimizing_vs.append((min_vertex, min_dist))
+
+        return minimizing_vs
