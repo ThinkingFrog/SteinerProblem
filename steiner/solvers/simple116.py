@@ -42,7 +42,10 @@ class SolverSimple116:
             w_list.append(meta[0])
 
         # Step 4
-        terminals_w_subgraph = graph.subgraph(terminals + w_list)
+
+        terminals_w_subgraph = self.get_induced_metric_closure(
+            graph, terminals + w_list
+        )
         show_graph(terminals_w_subgraph, "Last subgraph")
         final_mst = minimum_spanning_tree(terminals_w_subgraph)
         final_cost = graph_weight_sum(final_mst)
@@ -126,6 +129,13 @@ class SolverSimple116:
         max_triple_meta = (0, 0)
 
         for tr, meta in zip(triples, triples_metainfo):
+            if (
+                tr[0] not in list(graph.nodes)
+                or tr[1] not in list(graph.nodes)
+                or tr[2] not in list(graph.nodes)
+            ):
+                continue
+
             graph_mst = minimum_spanning_tree(graph)
             # show_graph(graph_mst, "Shortest paths graph MST")
             graph_mst_cost = graph_weight_sum(graph_mst)
