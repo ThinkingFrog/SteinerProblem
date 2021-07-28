@@ -24,3 +24,5 @@ def main(data: Path):
     print("Start 11/6 algorithm")
     solver = SolverSimple116()
     final_tree, final_cost = solver.solve(graph, terminals)
+    show_graph(final_tree, "Final 11/6 graph")
+    print(f"Final cost is {final_cost}")

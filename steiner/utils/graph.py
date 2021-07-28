@@ -23,3 +23,7 @@ def draw_graph(graph: nx.Graph, title: str) -> None:
 def show_graph(graph: nx.Graph, title: str) -> None:
     print_graph(graph, title)
     draw_graph(graph, title)
+
+
+def graph_weight_sum(graph: nx.Graph) -> int:
+    return sum([cost for src, dest, cost in graph.edges.data("weight")])

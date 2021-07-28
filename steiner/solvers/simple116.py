@@ -2,15 +2,19 @@ from itertools import combinations
 from typing import List, Tuple
 
 import networkx as nx
-import networkx.algorithms.approximation.steinertree as nxaas
-import networkx.algorithms.tree.mst as nxatm
 import networkx.classes.function as nxcf
+from networkx.algorithms.operators.binary import disjoint_union
+from networkx.algorithms.tree.mst import minimum_spanning_tree
 
-from steiner.utils.graph import show_graph
+from steiner.utils.graph import graph_weight_sum, show_graph
 
 
 class SolverSimple116:
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
+        # Step 1
+
+        w_list = list()
+
         shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
         show_graph(
             shortest_paths_graph, "Graph of terminals with paths replaced by shortest"
@@ -19,10 +23,31 @@ class SolverSimple116:
         triples = self.get_triples(shortest_paths_graph)
         print(triples)
 
-        min_vs = self.find_minimizing_v(shortest_paths_graph, triples)
-        print(min_vs)
+        # Step 2
 
-        return None, None
+        triples_meta_info = self.find_minimizing_v(graph, triples)
+        print(triples_meta_info)
+
+        # Step 3
+
+        while True:
+            win, triple, meta = self.find_win(
+                shortest_paths_graph, triples, triples_meta_info
+            )
+
+            if win <= 0:
+                break
+
+            shortest_paths_graph = self.contract_triple(shortest_paths_graph, triple)
+            w_list.append(meta[0])
+
+        # Step 4
+        terminals_w_subgraph = graph.subgraph(terminals + w_list)
+        show_graph(terminals_w_subgraph, "Last subgraph")
+        final_mst = minimum_spanning_tree(terminals_w_subgraph)
+        final_cost = graph_weight_sum(final_mst)
+
+        return final_mst, final_cost
 
     def get_induced_metric_closure(
         self, graph: nx.Graph, terminals: List[int]
@@ -76,3 +101,48 @@ class SolverSimple116:
             minimizing_vs.append((min_vertex, min_dist))
 
         return minimizing_vs
+
+    def contract_triple(self, graph: nx.Graph, triple: Tuple[int]) -> nx.Graph:
+        intermediate_contracted_graph = nx.contracted_nodes(
+            graph, triple[0], triple[1], self_loops=False
+        )
+        contracted_graph = nx.contracted_nodes(
+            intermediate_contracted_graph, triple[0], triple[2], self_loops=False
+        )
+
+        return contracted_graph
+
+    def find_win(
+        self,
+        graph: nx.Graph,
+        triples: List[Tuple[int]],
+        triples_metainfo: List[Tuple[int]],
+    ) -> Tuple[int, Tuple[int], Tuple[int]]:
+        if graph.size() < 4:
+            return 0, (0, 0, 0), (0, 0, 0)
+
+        max_win = 0
+        max_triple = (0, 0, 0)
+        max_triple_meta = (0, 0)
+
+        for tr, meta in zip(triples, triples_metainfo):
+            graph_mst = minimum_spanning_tree(graph)
+            # show_graph(graph_mst, "Shortest paths graph MST")
+            graph_mst_cost = graph_weight_sum(graph_mst)
+
+            contracted_graph = self.contract_triple(graph, tr)
+            # show_graph(contracted_graph, "Contracted_graph")
+            contracted_graph_mst = minimum_spanning_tree(contracted_graph)
+            # show_graph(contracted_graph_mst, "Contracted_graph_mst")
+            contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
+
+            dz = meta[1]
+
+            win = graph_mst_cost - contracted_graph_mst_cost - dz
+
+            if win > max_win:
+                max_win = win
+                max_triple = tr
+                max_triple_meta = meta
+
+        return max_win, max_triple, max_triple_meta
