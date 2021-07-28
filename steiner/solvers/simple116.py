@@ -2,8 +2,6 @@ from itertools import combinations
 from typing import List, Tuple
 
 import networkx as nx
-import networkx.classes.function as nxcf
-from networkx.algorithms.operators.binary import disjoint_union
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
 from steiner.utils.graph import graph_weight_sum, show_graph
@@ -16,9 +14,9 @@ class SolverSimple116:
         w_list = list()
 
         shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
-        show_graph(
-            shortest_paths_graph, "Graph of terminals with paths replaced by shortest"
-        )
+        # show_graph(
+        #    shortest_paths_graph, "Graph of terminals with paths replaced by shortest"
+        #)
 
         triples = self.get_triples(shortest_paths_graph)
         print(triples)
@@ -39,7 +37,7 @@ class SolverSimple116:
                 break
 
             shortest_paths_graph = self.contract_triple(shortest_paths_graph, triple)
-            show_graph(shortest_paths_graph, "Graph after contraction")
+            # show_graph(shortest_paths_graph, "Graph after contraction")
             w_list.append(meta[0])
 
         # Step 4
@@ -47,7 +45,7 @@ class SolverSimple116:
         terminals_w_subgraph = self.get_induced_metric_closure(
             graph, terminals + w_list
         )
-        show_graph(terminals_w_subgraph, "Last subgraph")
+        # show_graph(terminals_w_subgraph, "Last subgraph")
         final_mst = minimum_spanning_tree(terminals_w_subgraph)
         final_cost = graph_weight_sum(final_mst)
 
@@ -138,13 +136,13 @@ class SolverSimple116:
                 continue
 
             graph_mst = minimum_spanning_tree(graph)
-            show_graph(graph_mst, "Shortest paths graph MST")
+            # show_graph(graph_mst, "Shortest paths graph MST")
             graph_mst_cost = graph_weight_sum(graph_mst)
 
             contracted_graph = self.contract_triple(graph, tr)
-            show_graph(contracted_graph, "Contracted_graph")
+            # show_graph(contracted_graph, "Contracted_graph")
             contracted_graph_mst = minimum_spanning_tree(contracted_graph)
-            show_graph(contracted_graph_mst, "Contracted_graph_mst")
+            # show_graph(contracted_graph_mst, "Contracted_graph_mst")
             contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
 
             dz = meta[1]
