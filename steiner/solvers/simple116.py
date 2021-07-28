@@ -39,6 +39,7 @@ class SolverSimple116:
                 break
 
             shortest_paths_graph = self.contract_triple(shortest_paths_graph, triple)
+            show_graph(shortest_paths_graph, "Graph after contraction")
             w_list.append(meta[0])
 
         # Step 4
@@ -137,13 +138,13 @@ class SolverSimple116:
                 continue
 
             graph_mst = minimum_spanning_tree(graph)
-            # show_graph(graph_mst, "Shortest paths graph MST")
+            show_graph(graph_mst, "Shortest paths graph MST")
             graph_mst_cost = graph_weight_sum(graph_mst)
 
             contracted_graph = self.contract_triple(graph, tr)
-            # show_graph(contracted_graph, "Contracted_graph")
+            show_graph(contracted_graph, "Contracted_graph")
             contracted_graph_mst = minimum_spanning_tree(contracted_graph)
-            # show_graph(contracted_graph_mst, "Contracted_graph_mst")
+            show_graph(contracted_graph_mst, "Contracted_graph_mst")
             contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
 
             dz = meta[1]
