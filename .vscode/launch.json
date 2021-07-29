@@ -10,6 +10,15 @@
             ]
         },
         {
+            "name": "Steinlib dataset B",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/steinlib/B"
+            ]
+        },
+        {
             "name": "Steinlib Graph B01",
             "type": "python",
             "request": "launch",

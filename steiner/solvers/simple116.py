@@ -16,12 +16,10 @@ class SolverSimple116:
         shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
 
         triples = self.get_triples(shortest_paths_graph)
-        # print(triples)
 
         # Step 2
 
         triples_meta_info = self.find_minimizing_v(graph, triples)
-        # print(triples_meta_info)
 
         # Step 3
 
