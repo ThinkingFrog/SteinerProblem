@@ -4,7 +4,7 @@ from typing import List, Tuple
 import networkx as nx
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
-from steiner.utils.graph import graph_weight_sum, show_graph
+from steiner.utils.graph import graph_weight_sum
 
 
 class SolverSimple116:
@@ -14,17 +14,14 @@ class SolverSimple116:
         w_list = list()
 
         shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
-        # show_graph(
-        #    shortest_paths_graph, "Graph of terminals with paths replaced by shortest"
-        # )
 
         triples = self.get_triples(shortest_paths_graph)
-        print(triples)
+        # print(triples)
 
         # Step 2
 
         triples_meta_info = self.find_minimizing_v(graph, triples)
-        print(triples_meta_info)
+        # print(triples_meta_info)
 
         # Step 3
 
@@ -37,7 +34,6 @@ class SolverSimple116:
                 break
 
             shortest_paths_graph = self.contract_triple(shortest_paths_graph, triple)
-            # show_graph(shortest_paths_graph, "Graph after contraction")
             w_list.append(meta[0])
 
         # Step 4
@@ -45,7 +41,6 @@ class SolverSimple116:
         terminals_w_subgraph = self.get_induced_metric_closure(
             graph, terminals + w_list
         )
-        # show_graph(terminals_w_subgraph, "Last subgraph")
         final_mst = minimum_spanning_tree(terminals_w_subgraph)
         final_cost = graph_weight_sum(final_mst)
 
@@ -136,13 +131,10 @@ class SolverSimple116:
                 continue
 
             graph_mst = minimum_spanning_tree(graph)
-            # show_graph(graph_mst, "Shortest paths graph MST")
             graph_mst_cost = graph_weight_sum(graph_mst)
 
             contracted_graph = self.contract_triple(graph, tr)
-            # show_graph(contracted_graph, "Contracted_graph")
             contracted_graph_mst = minimum_spanning_tree(contracted_graph)
-            # show_graph(contracted_graph_mst, "Contracted_graph_mst")
             contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
 
             dz = meta[1]
