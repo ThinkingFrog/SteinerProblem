@@ -16,7 +16,7 @@ class SolverSimple116:
         shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
         # show_graph(
         #    shortest_paths_graph, "Graph of terminals with paths replaced by shortest"
-        #)
+        # )
 
         triples = self.get_triples(shortest_paths_graph)
         print(triples)
