@@ -1,48 +1,48 @@
 from itertools import combinations
-from typing import List, Tuple
+from typing import List, Tuple, Dict, Union
 
 import networkx as nx
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
 from steiner.utils.graph import graph_weight_sum
-
+ 
 
 class SolverSimple116:
+    TRIPLES_META_DATATYPE = List[Dict[str, Union[Tuple[int], int]]]
+    
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
         # Step 1
 
-        w_list = list()
-
-        shortest_paths_graph = self.get_induced_metric_closure(graph, terminals)
-
-        triples = self.get_triples(shortest_paths_graph)
+        induced_metric_closure = self.get_induced_metric_closure(graph, terminals)
+        triples = self.get_triples(induced_metric_closure)
 
         # Step 2
 
-        triples_meta_info = self.find_minimizing_v(graph, triples)
+        triples_meta = self.triples_closest_nodes(graph, triples)
 
         # Step 3
 
+        additional_nodes = list()
         while True:
             win, triple, meta = self.find_win(
-                shortest_paths_graph, triples, triples_meta_info
+                induced_metric_closure, triples_meta
             )
 
             if win <= 0:
                 break
 
-            shortest_paths_graph = self.contract_triple(shortest_paths_graph, triple)
-            w_list.append(meta[0])
+            induced_metric_closure = self.contract_triple(induced_metric_closure, triple)
+            additional_nodes.append(meta[0])
 
         # Step 4
 
-        terminals_w_subgraph = self.get_induced_metric_closure(
-            graph, terminals + w_list
+        terminals_additional_subgraph = self.get_induced_metric_closure(
+            graph, terminals + additional_nodes
         )
-        final_mst = minimum_spanning_tree(terminals_w_subgraph)
-        final_cost = graph_weight_sum(final_mst)
+        steiner_tree = minimum_spanning_tree(terminals_additional_subgraph)
+        steiner_tree_cost = graph_weight_sum(steiner_tree)
 
-        return final_mst, final_cost
+        return steiner_tree, steiner_tree_cost
 
     def get_induced_metric_closure(
         self, graph: nx.Graph, terminals: List[int]
@@ -70,10 +70,10 @@ class SolverSimple116:
 
         return triples
 
-    def find_minimizing_v(
+    def triples_closest_nodes(
         self, graph: nx.Graph, triples: List[Tuple[int]]
-    ) -> List[Tuple[int]]:
-        minimizing_vs = list()
+    ) -> TRIPLES_META_DATATYPE:
+        triples_meta = list()
 
         for tr in triples:
 
@@ -92,10 +92,10 @@ class SolverSimple116:
                 if min_dist == 0 or min_paths_sum < min_dist:
                     min_dist = min_paths_sum
                     min_vertex = v
+            
+            triples_meta.append({"triple": tr, "closest_node": min_vertex, "dist_to_node": min_dist})
 
-            minimizing_vs.append((min_vertex, min_dist))
-
-        return minimizing_vs
+        return triples_meta
 
     def contract_triple(self, graph: nx.Graph, triple: Tuple[int]) -> nx.Graph:
         intermediate_contracted_graph = nx.contracted_nodes(
@@ -110,8 +110,7 @@ class SolverSimple116:
     def find_win(
         self,
         graph: nx.Graph,
-        triples: List[Tuple[int]],
-        triples_metainfo: List[Tuple[int]],
+        triples_meta: TRIPLES_META_DATATYPE,
     ) -> Tuple[int, Tuple[int], Tuple[int]]:
         if graph.size() < 4:
             return 0, (0, 0, 0), (0, 0, 0)
@@ -120,7 +119,11 @@ class SolverSimple116:
         max_triple = (0, 0, 0)
         max_triple_meta = (0, 0)
 
-        for tr, meta in zip(triples, triples_metainfo):
+        for triple in triples_meta:
+            tr = triple["triple"]
+            node = triple["closest_node"]
+            dist = triple["dist_to_node"]
+
             if (
                 tr[0] not in list(graph.nodes)
                 or tr[1] not in list(graph.nodes)
@@ -135,13 +138,13 @@ class SolverSimple116:
             contracted_graph_mst = minimum_spanning_tree(contracted_graph)
             contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
 
-            dz = meta[1]
+            dz = dist
 
             win = graph_mst_cost - contracted_graph_mst_cost - dz
 
             if win > max_win:
                 max_win = win
                 max_triple = tr
-                max_triple_meta = meta
+                max_triple_meta = [node, dist]
 
         return max_win, max_triple, max_triple_meta

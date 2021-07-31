@@ -18,7 +18,7 @@ from steiner.utils.graph import draw_graph
     default=None,
 )
 @click.option(
-    "--verbose", "-v", help="Enable more output", default=False, is_flag=True,
+    "--verbose", "-v", help="Enable more textual output", default=False, is_flag=True,
 )
 @click.option(
     "--graphics", "-g", help="Enable visual output", default=False, is_flag=True,
