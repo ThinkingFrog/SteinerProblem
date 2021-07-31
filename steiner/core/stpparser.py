@@ -44,6 +44,8 @@ class STPParser:
 
                 if splitted[0] == self._name_mark:
                     name = splitted[1]
+                    if name[0] == '"' and name[-1] == '"':
+                        name = name[1:-1]
 
                 if splitted[0] == self._edge_mark:
                     graph.add_edge(

@@ -6,7 +6,7 @@ from steiner.core.config import Config
 from steiner.core.steiner_result import SteinerResult
 from steiner.core.stpparser import STPParser
 from steiner.solvers.simple116 import SolverSimple116
-from steiner.utils.graph import show_graph
+from steiner.utils.graph import draw_graph
 
 
 @click.command(name="steiner")
@@ -20,25 +20,39 @@ from steiner.utils.graph import show_graph
 @click.option(
     "--verbose", "-v", help="Enable more output", default=False, is_flag=True,
 )
-def main(data: Path, verbose: bool):
+@click.option(
+    "--graphics", "-g", help="Enable visual output", default=False, is_flag=True,
+)
+def main(data: Path, verbose: bool, graphics: bool):
     result = SteinerResult()
     config = Config(data)
     parser = STPParser()
 
     for data in config.data():
+        if verbose:
+            print("\nStart graph parsing")
+
         name, graph, terminals = parser.parse(data)
 
         if verbose:
-            show_graph(graph, "Original graph")
-            print(f"Parsed terminals are: {terminals}")
+            print(f"Parsed graph {name}")
             print("Start 11/6 algorithm")
+
+        if graphics:
+            draw_graph(graph, "Original graph")
 
         solver = SolverSimple116()
         final_tree, final_cost = solver.solve(graph, terminals)
 
+        if verbose:
+            print("Finish 11/6 algorithm")
+            print(f"Steiner tree cost is {final_cost}\n")
+
+        if graphics:
+            draw_graph(final_tree, "Steiner tree")
+
         result.add(name, "11/6", final_cost)
 
-    # if verbose:
-    # show_graph(final_tree, "Final 11/6 graph")
-    # print(f"Final cost is {final_cost}")
     result.print()
+    result.write_to_csv(Path("result.csv"))
+    result.write_to_json(Path("result.json"))

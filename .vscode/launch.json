@@ -1,12 +1,13 @@
 {
     "configurations": [
         {
-            "name": "Test Graph 1",
+            "name": "All data",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/test/t01.stp"
+                "--data", "data",
+                "--verbose"
             ]
         },
         {
@@ -16,6 +17,15 @@
             "module": "steiner",
             "args": [
                 "--data", "data/steinlib/B"
+            ]
+        },
+        {
+            "name": "Test Graph 1",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/test/t01.stp"
             ]
         },
         {
