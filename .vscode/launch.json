@@ -7,7 +7,6 @@
             "module": "steiner",
             "args": [
                 "--data", "data",
-                "--verbose",
                 "--output", "result"
             ]
         },
