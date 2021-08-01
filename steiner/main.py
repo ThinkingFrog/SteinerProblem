@@ -5,7 +5,7 @@ import click
 from steiner.core.config import Config
 from steiner.core.steiner_result import SteinerResult
 from steiner.core.stpparser import STPParser
-from steiner.solvers.simple116 import SolverSimple116
+from steiner.solvers.solver_factory import SolverFactory
 from steiner.utils.graph import draw_graph
 
 
@@ -30,31 +30,32 @@ def main(data: Path, verbose: bool, graphics: bool, output: Path):
     result = SteinerResult()
     config = Config(data)
     parser = STPParser()
+    factory = SolverFactory()
 
     for data in config.data():
-        if verbose:
-            print("\nStart graph parsing")
+        for solver_name in ["KMB", "11/6"]:
+            if verbose:
+                print("\nStart graph parsing")
 
-        name, graph, terminals = parser.parse(data)
+            name, graph, terminals = parser.parse(data)
 
-        if verbose:
-            print(f"Parsed graph {name}")
-            print("Start 11/6 algorithm")
+            if verbose:
+                print(f"Parsed graph {name}")
+                print(f"Start {solver_name} algorithm")
 
-        if graphics:
-            draw_graph(graph, "Original graph")
+            if graphics:
+                draw_graph(graph, "Original graph")
 
-        solver = SolverSimple116()
-        final_tree, final_cost = solver.solve(graph, terminals)
+            solver = factory.get_solver(solver_name)
+            steiner_tree, steiner_tree_cost = solver.solve(graph, terminals)
 
-        if verbose:
-            print("Finish 11/6 algorithm")
-            print(f"Steiner tree cost is {final_cost}\n")
-
-        if graphics:
-            draw_graph(final_tree, "Steiner tree")
-
-        result.add(name, "11/6", final_cost)
+            if verbose:
+                print(f"Steiner tree cost is {steiner_tree_cost}")
+                print(f"Finish {solver_name} algorithm\n")
+            if graphics:
+                draw_graph(steiner_tree, "Steiner tree")
+            
+            result.add(name, solver_name, steiner_tree_cost)
 
     if verbose:
         result.print()
