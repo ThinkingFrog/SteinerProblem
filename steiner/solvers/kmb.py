@@ -3,8 +3,8 @@ from typing import List, Tuple
 import networkx as nx
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
-from steiner.utils.graph import graph_weight_sum
 from steiner.solvers.base_solver import BaseSolver
+from steiner.utils.graph import graph_weight_sum
 
 
 class SolverKMB(BaseSolver):
@@ -13,7 +13,9 @@ class SolverKMB(BaseSolver):
 
         metric_closure_mst_graph = minimum_spanning_tree(metric_closure_graph)
 
-        unfolded_metric_closure_mst_graph = self._unfold_induced_metric_closure(graph, metric_closure_mst_graph)
+        unfolded_metric_closure_mst_graph = self._unfold_induced_metric_closure(
+            graph, metric_closure_mst_graph
+        )
 
         steiner_tree = minimum_spanning_tree(unfolded_metric_closure_mst_graph)
         steiner_tree_cost = graph_weight_sum(steiner_tree)
@@ -21,8 +23,8 @@ class SolverKMB(BaseSolver):
         return steiner_tree, steiner_tree_cost
 
     def _get_induced_metric_closure(
-            self, graph: nx.Graph, terminals: List[int]
-        ) -> nx.Graph:
+        self, graph: nx.Graph, terminals: List[int]
+    ) -> nx.Graph:
         induced_metric_closure_graph = nx.Graph()
 
         for term1 in terminals:
@@ -33,7 +35,9 @@ class SolverKMB(BaseSolver):
 
         return induced_metric_closure_graph
 
-    def _unfold_induced_metric_closure(self, original_graph: nx.Graph, metric_closure_graph: nx.Graph) -> nx.Graph:
+    def _unfold_induced_metric_closure(
+        self, original_graph: nx.Graph, metric_closure_graph: nx.Graph
+    ) -> nx.Graph:
         unfolded_graph = nx.Graph()
 
         for src, dest, weight in metric_closure_graph.edges.data("weight"):
@@ -49,5 +53,5 @@ class SolverKMB(BaseSolver):
                     next_node,
                     weight=original_graph.get_edge_data(node, next_node)["weight"],
                 )
-        
+
         return unfolded_graph

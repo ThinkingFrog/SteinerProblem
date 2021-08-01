@@ -1,7 +1,7 @@
-import networkx as nx
-
 from abc import ABC, abstractmethod
 from typing import List, Tuple
+
+import networkx as nx
 
 
 class BaseSolver(ABC):

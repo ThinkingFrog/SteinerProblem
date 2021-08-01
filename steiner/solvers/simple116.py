@@ -1,17 +1,17 @@
 from itertools import combinations
-from typing import List, Tuple, Dict, Union
+from typing import Dict, List, Tuple, Union
 
 import networkx as nx
-from networkx.algorithms.tree.mst import minimum_spanning_tree
 from networkx.algorithms.approximation.steinertree import metric_closure
+from networkx.algorithms.tree.mst import minimum_spanning_tree
 
-from steiner.utils.graph import graph_weight_sum
 from steiner.solvers.base_solver import BaseSolver
+from steiner.utils.graph import graph_weight_sum
 
 
 class SolverSimple116(BaseSolver):
     TRIPLES_META_DATATYPE = List[Dict[str, Union[Tuple[int], int]]]
-    
+
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
         # Step 1
 
@@ -26,14 +26,14 @@ class SolverSimple116(BaseSolver):
 
         additional_nodes = list()
         while True:
-            win, triple_meta = self._find_win(
-                induced_metric_closure, triples_meta
-            )
+            win, triple_meta = self._find_win(induced_metric_closure, triples_meta)
 
             if win <= 0:
                 break
 
-            induced_metric_closure = self._contract_triple(induced_metric_closure, triple_meta["triple"])
+            induced_metric_closure = self._contract_triple(
+                induced_metric_closure, triple_meta["triple"]
+            )
             additional_nodes.append(triple_meta["closest_node"])
 
         # Step 4
@@ -96,8 +96,10 @@ class SolverSimple116(BaseSolver):
                 if min_dist == 0 or min_paths_sum < min_dist:
                     min_dist = min_paths_sum
                     min_vertex = v
-            
-            triples_meta.append({"triple": tr, "closest_node": min_vertex, "dist_to_node": min_dist})
+
+            triples_meta.append(
+                {"triple": tr, "closest_node": min_vertex, "dist_to_node": min_dist}
+            )
 
         return triples_meta
 
@@ -116,7 +118,7 @@ class SolverSimple116(BaseSolver):
         graph: nx.Graph,
         triples_meta: TRIPLES_META_DATATYPE,
     ) -> Tuple[int, TRIPLES_META_DATATYPE]:
-        
+
         if graph.size() < 4:
             return 0, {"triple": (0, 0, 0), "closest_node": 0, "dist_to_node": 0}
 
@@ -146,6 +148,10 @@ class SolverSimple116(BaseSolver):
 
             if win > max_win:
                 max_win = win
-                max_triple_meta = {"triple": tr, "closest_node": node, "dist_to_node": dist}
+                max_triple_meta = {
+                    "triple": tr,
+                    "closest_node": node,
+                    "dist_to_node": dist,
+                }
 
         return max_win, max_triple_meta
