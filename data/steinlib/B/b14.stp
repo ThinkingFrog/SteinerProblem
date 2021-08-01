@@ -1,14 +1,9 @@
-33D32945 STP File, STP Format Version 1.0
-
-SECTION Comment
 Name    "B14"
-Creator "J. E. Beasley"
-Remark  "Sparse graph with random weights"
-END
-
-SECTION Graph
+Cost 235
 Nodes 100
 Edges 125
+Terminals 25
+
 E 1 10 2
 E 2 47 9
 E 3 91 3
@@ -134,10 +129,7 @@ E 98 44 2
 E 99 25 7
 E 100 34 3
 E 100 99 3
-END
 
-SECTION Terminals
-Terminals 25
 T 85
 T 96
 T 22
@@ -163,6 +155,5 @@ T 65
 T 43
 T 78
 T 72
-END
 
 EOF
