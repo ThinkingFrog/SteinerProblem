@@ -7,7 +7,8 @@
             "module": "steiner",
             "args": [
                 "--data", "data",
-                "--verbose"
+                "--verbose",
+                "--output", "result"
             ]
         },
         {
@@ -16,7 +17,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B"
+                "--data", "data/steinlib/B",
+                "--output", "result"
             ]
         },
         {
@@ -25,7 +27,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/test/t01.stp"
+                "--data", "data/test/t01.stp",
+                "--output", "result"
             ]
         },
         {
@@ -34,7 +37,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b01.stp"
+                "--data", "data/steinlib/B/b01.stp",
+                "--output", "result"
             ]
         },
         {
@@ -43,7 +47,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b02.stp"
+                "--data", "data/steinlib/B/b02.stp",
+                "--output", "result"
             ]
         },
         {
@@ -52,7 +57,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b03.stp"
+                "--data", "data/steinlib/B/b03.stp",
+                "--output", "result"
             ]
         }
     ]

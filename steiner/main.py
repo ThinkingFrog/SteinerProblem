@@ -14,7 +14,7 @@ from steiner.utils.graph import draw_graph
     "--data",
     "-d",
     help="Path to file/dir with graph",
-    type=click.Path(exists=True, file_okay=True, readable=True, path_type=Path),
+    type=click.Path(exists=True, file_okay=True, dir_okay=True,readable=True, path_type=Path),
     default=None,
 )
 @click.option(
@@ -23,7 +23,10 @@ from steiner.utils.graph import draw_graph
 @click.option(
     "--graphics", "-g", help="Enable visual output", default=False, is_flag=True,
 )
-def main(data: Path, verbose: bool, graphics: bool):
+@click.option(
+    "--output", "-o", help="Output directory", type=click.Path(exists=True, file_okay=True, dir_okay=True,readable=True, path_type=Path), default=None
+)
+def main(data: Path, verbose: bool, graphics: bool, output: Path):
     result = SteinerResult()
     config = Config(data)
     parser = STPParser()
@@ -53,6 +56,8 @@ def main(data: Path, verbose: bool, graphics: bool):
 
         result.add(name, "11/6", final_cost)
 
-    result.print()
-    result.write_to_csv(Path("result.csv"))
-    result.write_to_json(Path("result.json"))
+    if verbose:
+        result.print()
+
+    result.write_to_csv(output / "result.csv")
+    result.write_to_json(output / "result.json")
