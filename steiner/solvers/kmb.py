@@ -2,58 +2,51 @@ from typing import List, Tuple
 
 import networkx as nx
 import networkx.algorithms.tree.mst as nxatm
-from networkx.drawing.nx_pylab import draw
 
-from steiner.utils.graph import draw_graph, print_graph
+from steiner.utils.graph import graph_weight_sum
 
 
 class SolverKMB:
-    def __init__(self) -> None:
-        pass
-
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
-        shortest_paths_graph = nx.Graph()
+        metric_closure_graph = self.get_induced_metric_closure(graph, terminals)
+
+        metric_closure_mst_graph = nxatm.minimum_spanning_tree(metric_closure_graph)
+
+        unfolded_metric_closure_mst_graph = self.unfold_induced_metric_closure(graph, metric_closure_mst_graph)
+
+        steiner_tree = nxatm.minimum_spanning_tree(unfolded_metric_closure_mst_graph)
+        steiner_tree_cost = graph_weight_sum(steiner_tree)
+
+        return steiner_tree, steiner_tree_cost
+
+    def get_induced_metric_closure(
+            self, graph: nx.Graph, terminals: List[int]
+        ) -> nx.Graph:
+        induced_metric_closure_graph = nx.Graph()
 
         for term1 in terminals:
             for term2 in terminals:
                 if term1 != term2:
                     weight = nx.dijkstra_path_length(graph, term1, term2)
-                    shortest_paths_graph.add_edge(term1, term2, weight=weight)
+                    induced_metric_closure_graph.add_edge(term1, term2, weight=weight)
 
-        print("Shortest paths graph:")
-        print_graph(shortest_paths_graph)
-        draw_graph(shortest_paths_graph, "Graph with paths replaced by shortest")
+        return induced_metric_closure_graph
 
-        shortest_paths_graph_mst = nxatm.minimum_spanning_tree(shortest_paths_graph)
-        print("Shortest paths graph MST:")
-        print_graph(shortest_paths_graph_mst)
-        draw_graph(shortest_paths_graph_mst, "Applied MST to previous graph")
+    def unfold_induced_metric_closure(self, original_graph: nx.Graph, metric_closure_graph: nx.Graph) -> nx.Graph:
+        unfolded_graph = nx.Graph
 
-        unfolded_shortest_paths_graph_mst = nx.Graph()
-        for src, dest, weight in shortest_paths_graph_mst.edges.data("weight"):
-            corresponding_path = nx.dijkstra_path(graph, src, dest)
+        for src, dest, weight in metric_closure_graph.edges.data("weight"):
+            corresponding_path = nx.dijkstra_path(original_graph, src, dest)
             for node in corresponding_path:
                 try:
                     next_node = corresponding_path[corresponding_path.index(node) + 1]
                 except IndexError:
                     break
 
-                unfolded_shortest_paths_graph_mst.add_edge(
+                unfolded_graph.add_edge(
                     node,
                     next_node,
-                    weight=graph.get_edge_data(node, next_node)["weight"],
+                    weight=original_graph.get_edge_data(node, next_node)["weight"],
                 )
-        print("Unfolded shortest paths graph MST:")
-        print_graph(unfolded_shortest_paths_graph_mst)
-        draw_graph(
-            unfolded_shortest_paths_graph_mst, "Unfold shortest paths to original"
-        )
-
-        final_mst = nxatm.minimum_spanning_tree(unfolded_shortest_paths_graph_mst)
-        print("Final MST:")
-        print_graph(final_mst)
-        final_cost = sum([cost for src, dest, cost in final_mst.edges.data("weight")])
-        print(f"Final tree cost is {final_cost}")
-        draw_graph(final_mst, "Resulting Steiner Tree")
-
-        return final_mst, final_cost
+        
+        return unfolded_graph
