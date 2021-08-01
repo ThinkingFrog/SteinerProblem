@@ -1,6 +1,7 @@
 # VSCode
 build/
-.vscode/
+.vscode/settings.json
+
 
 # Visual Studio
 .vs/
