@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
 import networkx as nx
-import networkx.algorithms.tree.mst as nxatm
+from networkx.algorithms.tree.mst import minimum_spanning_tree
 
 from steiner.utils.graph import graph_weight_sum
 
@@ -10,11 +10,11 @@ class SolverKMB:
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
         metric_closure_graph = self.get_induced_metric_closure(graph, terminals)
 
-        metric_closure_mst_graph = nxatm.minimum_spanning_tree(metric_closure_graph)
+        metric_closure_mst_graph = minimum_spanning_tree(metric_closure_graph)
 
         unfolded_metric_closure_mst_graph = self.unfold_induced_metric_closure(graph, metric_closure_mst_graph)
 
-        steiner_tree = nxatm.minimum_spanning_tree(unfolded_metric_closure_mst_graph)
+        steiner_tree = minimum_spanning_tree(unfolded_metric_closure_mst_graph)
         steiner_tree_cost = graph_weight_sum(steiner_tree)
 
         return steiner_tree, steiner_tree_cost
