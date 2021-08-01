@@ -3,7 +3,8 @@ import networkx as nx
 import networkx.drawing.layout as nxdl
 
 
-def print_graph(graph: nx.Graph) -> None:
+def print_graph(graph: nx.Graph, title: str) -> None:
+    print(f"{title}:")
     print(f"Graph size is {graph.size()}")
     for src, dest, weight in graph.edges.data("weight"):
         print(f"E {src} {dest} {weight}")
@@ -17,3 +18,12 @@ def draw_graph(graph: nx.Graph, title: str) -> None:
 
     plt.title(title)
     plt.show()
+
+
+def show_graph(graph: nx.Graph, title: str) -> None:
+    print_graph(graph, title)
+    draw_graph(graph, title)
+
+
+def graph_weight_sum(graph: nx.Graph) -> int:
+    return sum([cost for src, dest, cost in graph.edges.data("weight")])

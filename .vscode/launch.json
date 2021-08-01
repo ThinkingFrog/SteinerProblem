@@ -1,12 +1,34 @@
 {
     "configurations": [
         {
+            "name": "All data",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data",
+                "--verbose",
+                "--output", "result"
+            ]
+        },
+        {
+            "name": "Steinlib dataset B",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/steinlib/B",
+                "--output", "result"
+            ]
+        },
+        {
             "name": "Test Graph 1",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/test/t01.stp"
+                "--data", "data/test/t01.stp",
+                "--output", "result"
             ]
         },
         {
@@ -15,7 +37,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b01.stp"
+                "--data", "data/steinlib/B/b01.stp",
+                "--output", "result"
             ]
         },
         {
@@ -24,7 +47,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b02.stp"
+                "--data", "data/steinlib/B/b02.stp",
+                "--output", "result"
             ]
         },
         {
@@ -33,7 +57,8 @@
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b03.stp"
+                "--data", "data/steinlib/B/b03.stp",
+                "--output", "result"
             ]
         }
     ]
