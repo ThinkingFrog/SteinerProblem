@@ -25,15 +25,15 @@ class SolverSimple116:
 
         additional_nodes = list()
         while True:
-            win, triple, meta = self.find_win(
+            win, triple_meta = self.find_win(
                 induced_metric_closure, triples_meta
             )
 
             if win <= 0:
                 break
 
-            induced_metric_closure = self.contract_triple(induced_metric_closure, triple)
-            additional_nodes.append(meta[0])
+            induced_metric_closure = self.contract_triple(induced_metric_closure, triple_meta["triple"])
+            additional_nodes.append(triple_meta["closest_node"])
 
         # Step 4
 
@@ -114,13 +114,13 @@ class SolverSimple116:
         self,
         graph: nx.Graph,
         triples_meta: TRIPLES_META_DATATYPE,
-    ) -> Tuple[int, Tuple[int], Tuple[int]]:
+    ) -> Tuple[int, TRIPLES_META_DATATYPE]:
+        
         if graph.size() < 4:
-            return 0, (0, 0, 0), (0, 0, 0)
+            return 0, {"triple": (0, 0, 0), "closest_node": 0, "dist_to_node": 0}
 
         max_win = 0
-        max_triple = (0, 0, 0)
-        max_triple_meta = (0, 0)
+        max_triple_meta = {"triple": (0, 0, 0), "closest_node": 0, "dist_to_node": 0}
 
         for triple in triples_meta:
             tr = triple["triple"]
@@ -141,13 +141,10 @@ class SolverSimple116:
             contracted_graph_mst = minimum_spanning_tree(contracted_graph)
             contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
 
-            dz = dist
-
-            win = graph_mst_cost - contracted_graph_mst_cost - dz
+            win = graph_mst_cost - contracted_graph_mst_cost - dist
 
             if win > max_win:
                 max_win = win
-                max_triple = tr
-                max_triple_meta = [node, dist]
+                max_triple_meta = {"triple": tr, "closest_node": node, "dist_to_node": dist}
 
-        return max_win, max_triple, max_triple_meta
+        return max_win, max_triple_meta
