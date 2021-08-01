@@ -3,6 +3,7 @@ from typing import List, Tuple, Dict, Union
 
 import networkx as nx
 from networkx.algorithms.tree.mst import minimum_spanning_tree
+from networkx.algorithms.approximation.steinertree import metric_closure
 
 from steiner.utils.graph import graph_weight_sum
  
@@ -75,6 +76,8 @@ class SolverSimple116:
     ) -> TRIPLES_META_DATATYPE:
         triples_meta = list()
 
+        metric_closure_graph = metric_closure(graph)
+
         for tr in triples:
 
             min_dist = 0
@@ -85,9 +88,9 @@ class SolverSimple116:
                     continue
 
                 min_paths_sum = (
-                    nx.dijkstra_path_length(graph, v, tr[0])
-                    + nx.dijkstra_path_length(graph, v, tr[1])
-                    + nx.dijkstra_path_length(graph, v, tr[2])
+                    metric_closure_graph.get_edge_data(v, tr[0])["distance"]
+                    + metric_closure_graph.get_edge_data(v, tr[1])["distance"]
+                    + metric_closure_graph.get_edge_data(v, tr[2])["distance"]
                 )
                 if min_dist == 0 or min_paths_sum < min_dist:
                     min_dist = min_paths_sum
