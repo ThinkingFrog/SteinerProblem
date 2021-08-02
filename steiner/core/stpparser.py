@@ -3,33 +3,35 @@ from typing import List, Tuple
 
 import networkx as nx
 
+from steiner.core.graph_info import GraphInfo
+
 
 class STPParser:
-    _eof_mark: str
-    _nodes_count_mark: str
-    _edge_mark: str
-    _terminal_mark: str
-    _name_mark: str
-
     def __init__(self) -> None:
         self._eof_mark = "EOF"
+
         self._edge_mark = "E"
         self._terminal_mark = "T"
-        self._name_mark = "Name"
 
-    def parse(self, graph_file: Path) -> Tuple[str, nx.Graph, List[int]]:
+        self._name_info_mark = "Name"
+        self._cost_info_mark = "Cost"
+        self._nodes_info_mark = "Nodes"
+        self._edges_info_mark = "Edges"
+        self._terminals_info_mark = "Terminals"
+
+    def parse(self, graph_file: Path) -> Tuple[GraphInfo, nx.Graph, List[int]]:
         """Method to parse STP files
 
         Args:
             graph_file (Path): Path to stp file
 
         Returns:
-            str: Name of the graph
+            GraphInfo: Info on the graph
             nx.Graph: Resulting networkx.Graph class instance
             List[int]: List of terminal nodes numbers
         """
 
-        name: str
+        graph_info = GraphInfo()
         terminals: List[int] = list()
         graph = nx.Graph()
 
@@ -42,10 +44,23 @@ class STPParser:
                 if len(splitted) < 2:
                     continue
 
-                if splitted[0] == self._name_mark:
+                if splitted[0] == self._name_info_mark:
                     name = splitted[1]
                     if name[0] == '"' and name[-1] == '"':
                         name = name[1:-1]
+                    graph_info.name = name
+
+                if splitted[0] == self._cost_info_mark:
+                    graph_info.cost = int(splitted[1])
+
+                if splitted[0] == self._nodes_info_mark:
+                    graph_info.nodes = int(splitted[1])
+
+                if splitted[0] == self._edges_info_mark:
+                    graph_info.edges = int(splitted[1])
+
+                if splitted[0] == self._terminals_info_mark:
+                    graph_info.terminals = int(splitted[1])
 
                 if splitted[0] == self._edge_mark:
                     graph.add_edge(
@@ -55,4 +70,4 @@ class STPParser:
                 if splitted[0] == self._terminal_mark:
                     terminals.append(int(splitted[1]))
 
-        return name, graph, terminals
+        return graph_info, graph, terminals

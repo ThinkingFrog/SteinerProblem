@@ -3,11 +3,10 @@ from typing import List, Tuple
 import networkx as nx
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
-from steiner.solvers.base_solver import BaseSolver
 from steiner.utils.graph import graph_weight_sum
 
 
-class SolverKMB(BaseSolver):
+class SolverKMB:
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
         metric_closure_graph = self._get_induced_metric_closure(graph, terminals)
 
@@ -21,6 +20,9 @@ class SolverKMB(BaseSolver):
         steiner_tree_cost = graph_weight_sum(steiner_tree)
 
         return steiner_tree, steiner_tree_cost
+
+    def name(self) -> str:
+        return "KMB"
 
     def _get_induced_metric_closure(
         self, graph: nx.Graph, terminals: List[int]
