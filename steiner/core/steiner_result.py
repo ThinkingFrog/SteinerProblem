@@ -15,7 +15,12 @@ class SteinerResult:
         self._algorithm_data = dict()
 
     def add(
-        self, graph_info: GraphInfo, algorithm_name: str, tree_cost: int, runtime: float
+        self,
+        graph_info: GraphInfo,
+        algorithm_name: str,
+        tree_cost: int,
+        runtime: float,
+        valid: bool,
     ) -> None:
         if graph_info.name not in self._graph_data.keys():
             self._graph_data[graph_info.name] = dict()
@@ -38,6 +43,7 @@ class SteinerResult:
             tree_cost / self._graph_data[graph_info.name]["Expected cost"] - 1
         ) * 100
         self._algorithm_data[graph_info.name][algorithm_name]["Runtime (s)"] = runtime
+        self._algorithm_data[graph_info.name][algorithm_name]["Validated"] = valid
 
     def write_to_json(self, json_file_path: Path) -> None:
         with json_file_path.open("w") as f:
