@@ -3,6 +3,8 @@ import json
 from pathlib import Path
 from typing import Dict, Union
 
+import mergedeep
+
 from steiner.core.graph_info import GraphInfo
 
 
@@ -47,7 +49,9 @@ class SteinerResult:
 
     def write_to_json(self, json_file_path: Path) -> None:
         with json_file_path.open("w") as f:
-            json.dump(self._graph_data | self._algorithm_data, f, indent=4)
+            json.dump(
+                mergedeep.merge({}, self._graph_data, self._algorithm_data), f, indent=4
+            )
 
     def write_to_csv(self, csv_file_path: Path) -> None:
         with csv_file_path.open("w") as f:
