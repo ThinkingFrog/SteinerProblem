@@ -3,8 +3,6 @@ import json
 from pathlib import Path
 from typing import Dict, Union
 
-from networkx.classes.graph import Graph
-
 from steiner.core.graph_info import GraphInfo
 
 
