@@ -40,6 +40,9 @@ def main(data: Path, output: Path):
     for data in tqdm(config.data()):
         graph_info, graph, terminals = parser.parse(data)
 
+        if graph_info.terminals > 50:
+            continue
+
         for solver in [SolverKMB(), SolverSimple116()]:
             start_time = time.time()
 
