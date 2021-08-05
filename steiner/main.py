@@ -1,63 +1,57 @@
+import time
 from pathlib import Path
 
 import click
+from tqdm import tqdm
 
 from steiner.core.config import Config
 from steiner.core.steiner_result import SteinerResult
 from steiner.core.stpparser import STPParser
+from steiner.core.validator import Validator
+from steiner.solvers.kmb import SolverKMB
 from steiner.solvers.simple116 import SolverSimple116
-from steiner.utils.graph import draw_graph
 
 
 @click.command(name="steiner")
 @click.option(
     "--data",
     "-d",
-    help="Path to file/dir with graph",
-    type=click.Path(exists=True, file_okay=True, dir_okay=True,readable=True, path_type=Path),
+    help="Path to file/dir with graph(s)",
+    type=click.Path(
+        exists=True, file_okay=True, dir_okay=True, readable=True, path_type=Path
+    ),
     default=None,
 )
 @click.option(
-    "--verbose", "-v", help="Enable more textual output", default=False, is_flag=True,
+    "--output",
+    "-o",
+    help="Output directory",
+    type=click.Path(
+        exists=True, file_okay=True, dir_okay=True, readable=True, path_type=Path
+    ),
+    default=None,
 )
-@click.option(
-    "--graphics", "-g", help="Enable visual output", default=False, is_flag=True,
-)
-@click.option(
-    "--output", "-o", help="Output directory", type=click.Path(exists=True, file_okay=True, dir_okay=True,readable=True, path_type=Path), default=None
-)
-def main(data: Path, verbose: bool, graphics: bool, output: Path):
+def main(data: Path, output: Path):
     result = SteinerResult()
     config = Config(data)
     parser = STPParser()
+    validator = Validator()
 
-    for data in config.data():
-        if verbose:
-            print("\nStart graph parsing")
+    for data in tqdm(config.data()):
+        graph_info, graph, terminals = parser.parse(data)
 
-        name, graph, terminals = parser.parse(data)
+        if graph_info.terminals > 50:
+            continue
 
-        if verbose:
-            print(f"Parsed graph {name}")
-            print("Start 11/6 algorithm")
+        for solver in [SolverKMB(), SolverSimple116()]:
+            start_time = time.time()
 
-        if graphics:
-            draw_graph(graph, "Original graph")
+            steiner_tree, steiner_tree_cost = solver.solve(graph, terminals)
 
-        solver = SolverSimple116()
-        final_tree, final_cost = solver.solve(graph, terminals)
+            finish_time = time.time()
+            runtime = finish_time - start_time
 
-        if verbose:
-            print("Finish 11/6 algorithm")
-            print(f"Steiner tree cost is {final_cost}\n")
+            is_valid = validator.validate(steiner_tree, terminals)
+            result.add(graph_info, solver.name(), steiner_tree_cost, runtime, is_valid)
 
-        if graphics:
-            draw_graph(final_tree, "Steiner tree")
-
-        result.add(name, "11/6", final_cost)
-
-    if verbose:
-        result.print()
-
-    result.write_to_csv(output / "result.csv")
-    result.write_to_json(output / "result.json")
+    result.dump(output)

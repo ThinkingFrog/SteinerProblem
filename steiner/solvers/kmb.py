@@ -8,20 +8,25 @@ from steiner.utils.graph import graph_weight_sum
 
 class SolverKMB:
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
-        metric_closure_graph = self.get_induced_metric_closure(graph, terminals)
+        metric_closure_graph = self._get_induced_metric_closure(graph, terminals)
 
         metric_closure_mst_graph = minimum_spanning_tree(metric_closure_graph)
 
-        unfolded_metric_closure_mst_graph = self.unfold_induced_metric_closure(graph, metric_closure_mst_graph)
+        unfolded_metric_closure_mst_graph = self._unfold_induced_metric_closure(
+            graph, metric_closure_mst_graph
+        )
 
         steiner_tree = minimum_spanning_tree(unfolded_metric_closure_mst_graph)
         steiner_tree_cost = graph_weight_sum(steiner_tree)
 
         return steiner_tree, steiner_tree_cost
 
-    def get_induced_metric_closure(
-            self, graph: nx.Graph, terminals: List[int]
-        ) -> nx.Graph:
+    def name(self) -> str:
+        return "KMB"
+
+    def _get_induced_metric_closure(
+        self, graph: nx.Graph, terminals: List[int]
+    ) -> nx.Graph:
         induced_metric_closure_graph = nx.Graph()
 
         for term1 in terminals:
@@ -32,8 +37,10 @@ class SolverKMB:
 
         return induced_metric_closure_graph
 
-    def unfold_induced_metric_closure(self, original_graph: nx.Graph, metric_closure_graph: nx.Graph) -> nx.Graph:
-        unfolded_graph = nx.Graph
+    def _unfold_induced_metric_closure(
+        self, original_graph: nx.Graph, metric_closure_graph: nx.Graph
+    ) -> nx.Graph:
+        unfolded_graph = nx.Graph()
 
         for src, dest, weight in metric_closure_graph.edges.data("weight"):
             corresponding_path = nx.dijkstra_path(original_graph, src, dest)
@@ -48,5 +55,5 @@ class SolverKMB:
                     next_node,
                     weight=original_graph.get_edge_data(node, next_node)["weight"],
                 )
-        
+
         return unfolded_graph

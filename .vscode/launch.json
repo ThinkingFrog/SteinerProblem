@@ -7,17 +7,16 @@
             "module": "steiner",
             "args": [
                 "--data", "data",
-                "--verbose",
                 "--output", "result"
             ]
         },
         {
-            "name": "Steinlib dataset B",
+            "name": "Max 50 terminals testset",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B",
+                "--data", "data/50T",
                 "--output", "result"
             ]
         },
@@ -32,34 +31,44 @@
             ]
         },
         {
-            "name": "Steinlib Graph B01",
+            "name": "Steinlib dataset B",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b01.stp",
+                "--data", "data/steinlib/B",
                 "--output", "result"
             ]
         },
         {
-            "name": "Steinlib Graph B02",
+            "name": "Steinlib dataset C",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b02.stp",
+                "--data", "data/steinlib/C",
                 "--output", "result"
             ]
         },
         {
-            "name": "Steinlib Graph B03",
+            "name": "Steinlib dataset D",
             "type": "python",
             "request": "launch",
             "module": "steiner",
             "args": [
-                "--data", "data/steinlib/B/b03.stp",
+                "--data", "data/steinlib/D",
                 "--output", "result"
             ]
-        }
+        },
+        {
+            "name": "Steinlib dataset E",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/steinlib/E",
+                "--output", "result"
+            ]
+        },
     ]
 }
