@@ -11,6 +11,16 @@
             ]
         },
         {
+            "name": "Max 50 terminals testset",
+            "type": "python",
+            "request": "launch",
+            "module": "steiner",
+            "args": [
+                "--data", "data/50T",
+                "--output", "result"
+            ]
+        },
+        {
             "name": "Test Graph 1",
             "type": "python",
             "request": "launch",
