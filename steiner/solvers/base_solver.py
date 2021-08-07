@@ -2,8 +2,7 @@ from abc import ABC, abstractmethod
 from typing import List, Tuple
 
 import networkx as nx
-from networkx.algorithms.traversal.depth_first_search import \
-    dfs_postorder_nodes
+from networkx.algorithms.traversal.depth_first_search import dfs_postorder_nodes
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
 
