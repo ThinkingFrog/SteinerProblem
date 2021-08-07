@@ -46,7 +46,7 @@ class SolverSimple116Base(BaseSolver):
         return steiner_tree, steiner_tree_cost
 
     def name(self) -> str:
-        return "11/6 Basic"
+        return "Simple 11/6 Basic"
 
     def _get_triples(self, graph: nx.Graph) -> List[Tuple[int]]:
         triples = list(combinations(graph.nodes, 3))

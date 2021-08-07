@@ -11,6 +11,7 @@ from steiner.core.validator import Validator
 from steiner.solvers.solver_kmb_base import SolverKMBBase
 from steiner.solvers.solver_kmb_full import SolverKMBFull
 from steiner.solvers.solver_simple116_base import SolverSimple116Base
+from steiner.solvers.solver_simple116_full import SolverSimple116Full
 
 
 @click.command(name="steiner")
@@ -27,21 +28,24 @@ from steiner.solvers.solver_simple116_base import SolverSimple116Base
     "--output",
     "-o",
     help="Output directory",
-    type=click.Path(
-        exists=True, file_okay=True, dir_okay=True, readable=True, path_type=Path
-    ),
+    type=click.Path(path_type=Path),
     default=None,
 )
 def main(data: Path, output: Path):
     result = SteinerResult()
-    config = Config(data)
+    config = Config(data, output)
     parser = STPParser()
     validator = Validator()
 
     for data in tqdm(config.data()):
         graph_info, graph, terminals = parser.parse(data)
 
-        for solver in [SolverKMBBase(), SolverKMBFull(), SolverSimple116Base()]:
+        for solver in [
+            SolverKMBBase(),
+            SolverKMBFull(),
+            SolverSimple116Base(),
+            SolverSimple116Full(),
+        ]:
             start_time = time.time()
 
             steiner_tree, steiner_tree_cost = solver.solve(graph, terminals)
@@ -52,4 +56,4 @@ def main(data: Path, output: Path):
             is_valid = validator.validate(steiner_tree, terminals)
             result.add(graph_info, solver.name(), steiner_tree_cost, runtime, is_valid)
 
-    result.dump(output)
+    result.dump(config.output())

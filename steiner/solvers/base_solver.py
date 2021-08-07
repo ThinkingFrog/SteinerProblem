@@ -2,6 +2,9 @@ from abc import ABC, abstractmethod
 from typing import List, Tuple
 
 import networkx as nx
+from networkx.algorithms.traversal.depth_first_search import \
+    dfs_postorder_nodes
+from networkx.algorithms.tree.mst import minimum_spanning_tree
 
 
 class BaseSolver(ABC):
@@ -28,3 +31,56 @@ class BaseSolver(ABC):
 
     def _sum_weight(self, graph: nx.Graph) -> int:
         return sum(cost for src, dest, cost in graph.edges.data("weight"))
+
+    def _optimize_result(
+        self, original_graph: nx.Graph, mc_graph: nx.Graph, terminals: List[int]
+    ) -> Tuple[nx.Graph, int]:
+        unfolded_graph = self._unfold_induced_metric_closure(original_graph, mc_graph)
+
+        mst_graph = minimum_spanning_tree(unfolded_graph)
+
+        steiner_tree = self._remove_redundant_nodes(mst_graph, terminals)
+        steiner_tree_cost = self._sum_weight(steiner_tree)
+
+        return steiner_tree, steiner_tree_cost
+
+    def _unfold_induced_metric_closure(
+        self, original_graph: nx.Graph, metric_closure_graph: nx.Graph
+    ) -> nx.Graph:
+        unfolded_graph = nx.Graph()
+
+        for src, dest, weight in metric_closure_graph.edges.data("weight"):
+            corresponding_path = nx.dijkstra_path(original_graph, src, dest)
+            for node in corresponding_path:
+                try:
+                    next_node = corresponding_path[corresponding_path.index(node) + 1]
+                except IndexError:
+                    break
+
+                unfolded_graph.add_edge(
+                    node,
+                    next_node,
+                    weight=original_graph.get_edge_data(node, next_node)["weight"],
+                )
+
+        return unfolded_graph
+
+    def _remove_redundant_nodes(
+        self, graph: nx.Graph, terminals: List[int]
+    ) -> nx.Graph:
+        redundant_nodes = list()
+
+        for node in dfs_postorder_nodes(graph, terminals[0]):
+            valid_neighbours = []
+
+            for n in graph[node]:
+                if n not in redundant_nodes:
+                    valid_neighbours.append(n)
+
+            if node not in terminals and len(valid_neighbours) == 1:
+                redundant_nodes.append(node)
+
+        cleaned_graph: nx.Graph = graph.copy()
+        cleaned_graph.remove_nodes_from(redundant_nodes)
+
+        return cleaned_graph
