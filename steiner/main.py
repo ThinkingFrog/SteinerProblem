@@ -8,8 +8,9 @@ from steiner.core.config import Config
 from steiner.core.steiner_result import SteinerResult
 from steiner.core.stpparser import STPParser
 from steiner.core.validator import Validator
-from steiner.solvers.kmb import SolverKMB
-from steiner.solvers.simple116 import SolverSimple116
+from steiner.solvers.solver_kmb_base import SolverKMBBase
+from steiner.solvers.solver_kmb_full import SolverKMBFull
+from steiner.solvers.solver_simple116_base import SolverSimple116Base
 
 
 @click.command(name="steiner")
@@ -40,10 +41,7 @@ def main(data: Path, output: Path):
     for data in tqdm(config.data()):
         graph_info, graph, terminals = parser.parse(data)
 
-        if graph_info.terminals > 50:
-            continue
-
-        for solver in [SolverKMB(), SolverSimple116()]:
+        for solver in [SolverKMBBase(), SolverKMBFull(), SolverSimple116Base()]:
             start_time = time.time()
 
             steiner_tree, steiner_tree_cost = solver.solve(graph, terminals)
