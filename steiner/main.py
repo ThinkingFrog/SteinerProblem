@@ -11,7 +11,13 @@ from steiner.core.validator import Validator
 from steiner.solvers.solver_kmb_base import SolverKMBBase
 from steiner.solvers.solver_kmb_full import SolverKMBFull
 from steiner.solvers.solver_simple116_base import SolverSimple116Base
+from steiner.solvers.solver_simple116_base_zero_contract import (
+    SolverSimple116BaseZeroContract,
+)
 from steiner.solvers.solver_simple116_full import SolverSimple116Full
+from steiner.solvers.solver_simple116_full_zero_contract import (
+    SolverSimple116FullZeroContract,
+)
 
 
 @click.command(name="steiner")
@@ -44,7 +50,9 @@ def main(data: Path, output: Path):
             SolverKMBBase(),
             SolverKMBFull(),
             SolverSimple116Base(),
+            SolverSimple116BaseZeroContract(),
             SolverSimple116Full(),
+            SolverSimple116FullZeroContract(),
         ]:
             start_time = time.time()
 
