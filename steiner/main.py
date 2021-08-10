@@ -8,6 +8,14 @@ from steiner.core.config import Config
 from steiner.core.steiner_result import SteinerResult
 from steiner.core.stpparser import STPParser
 from steiner.core.validator import Validator
+from steiner.solvers.solver_advanced116_base import SolverAdvanced116Base
+from steiner.solvers.solver_advanced116_base_zero_contract import (
+    SolverAdvanced116BaseZeroContract,
+)
+from steiner.solvers.solver_advanced116_full import SolverAdvanced116Full
+from steiner.solvers.solver_advanced116_full_zero_contract import (
+    SolverAdvanced116FullZeroContract,
+)
 from steiner.solvers.solver_kmb_base import SolverKMBBase
 from steiner.solvers.solver_kmb_full import SolverKMBFull
 from steiner.solvers.solver_simple116_base import SolverSimple116Base
@@ -53,6 +61,10 @@ def main(data: Path, output: Path):
             SolverSimple116BaseZeroContract(),
             SolverSimple116Full(),
             SolverSimple116FullZeroContract(),
+            SolverAdvanced116Base(),
+            SolverAdvanced116BaseZeroContract(),
+            SolverAdvanced116Full(),
+            SolverAdvanced116FullZeroContract(),
         ]:
             start_time = time.time()
 

@@ -92,12 +92,13 @@ class SolverSimple116Base(BaseSolver):
 
         return triples_meta
 
+    def _contract_edge(self, graph: nx.Graph, node1: int, node2: int) -> nx.Graph:
+        return nx.contracted_nodes(graph, node1, node2, self_loops=False)
+
     def _contract_triple(self, graph: nx.Graph, triple: Tuple[int]) -> nx.Graph:
-        intermediate_contracted_graph = nx.contracted_nodes(
-            graph, triple[0], triple[1], self_loops=False
-        )
-        contracted_graph = nx.contracted_nodes(
-            intermediate_contracted_graph, triple[0], triple[2], self_loops=False
+        intermediate_contracted_graph = self._contract_edge(graph, triple[0], triple[1])
+        contracted_graph = self._contract_edge(
+            intermediate_contracted_graph, triple[0], triple[2]
         )
 
         return contracted_graph

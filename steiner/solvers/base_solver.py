@@ -2,8 +2,10 @@ from abc import ABC, abstractmethod
 from typing import List, Tuple
 
 import networkx as nx
+from networkx.algorithms.approximation.steinertree import metric_closure
 from networkx.algorithms.traversal.depth_first_search import dfs_postorder_nodes
 from networkx.algorithms.tree.mst import minimum_spanning_tree
+from networkx.classes.function import induced_subgraph
 
 
 class BaseSolver(ABC):
@@ -18,15 +20,21 @@ class BaseSolver(ABC):
     def _get_induced_metric_closure(
         self, graph: nx.Graph, terminals: List[int]
     ) -> nx.Graph:
-        induced_metric_closure_graph = nx.Graph()
+        mc_graph = metric_closure(graph)
+        induced_mc_graph = induced_subgraph(mc_graph, terminals)
+        for src, dest, edata in induced_mc_graph.edges(data=True):
+            edata["weight"] = edata["distance"]
+        return induced_mc_graph
 
-        for term1 in terminals:
-            for term2 in terminals:
-                if term1 != term2:
-                    weight = nx.dijkstra_path_length(graph, term1, term2)
-                    induced_metric_closure_graph.add_edge(term1, term2, weight=weight)
-
-        return induced_metric_closure_graph
+    #        induced_metric_closure_graph = nx.Graph()
+    #
+    #         for term1 in terminals:
+    #             for term2 in terminals:
+    #                 if term1 != term2:
+    #                     weight = nx.dijkstra_path_length(graph, term1, term2)
+    #                     induced_metric_closure_graph.add_edge(term1, term2, weight=weight)
+    #
+    #        return induced_metric_closure_graph
 
     def _sum_weight(self, graph: nx.Graph) -> int:
         return sum(cost for src, dest, cost in graph.edges.data("weight"))
