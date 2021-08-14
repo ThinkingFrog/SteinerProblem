@@ -6,7 +6,11 @@ from steiner.solvers.solver_advanced116_base import SolverAdvanced116Base
 class SolverAdvanced116BaseZeroContract(SolverAdvanced116Base):
     def _contract_edge(self, graph: nx.Graph, node1: int, node2: int) -> nx.Graph:
         contracted_graph = graph.copy()
-        contracted_graph[node1][node2]["weight"] = 0
+        try:
+            contracted_graph[node1][node2]["weight"] = 0
+            contracted_graph[node1][node2]["distance"] = 0
+        except BaseException:
+            pass
 
         return contracted_graph
 

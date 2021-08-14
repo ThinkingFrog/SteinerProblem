@@ -26,16 +26,18 @@ class SolverAdvanced116Base(SolverSimple116Base):
 
         triples_meta = self._triples_closest_nodes(graph, triples, voronoi_regions)
 
-        # Step 3
+        # Step 4
 
         additional_nodes = list()
         while True:
             imc_mst = minimum_spanning_tree(induced_metric_closure)
-            save_matrix = defaultdict(lambda: defaultdict(int))
-            self.findsave(imc_mst, save_matrix)
+            self._save_matrix: Dict[int, Dict[int, int]] = defaultdict(
+                lambda: defaultdict(int)
+            )
+            self._findsave(imc_mst)
 
             win, triple_meta = self._find_win(
-                induced_metric_closure, triples_meta, save_matrix
+                induced_metric_closure, triples_meta, self._save_matrix
             )
 
             if win <= 0:
@@ -46,7 +48,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
             )
             additional_nodes.append(triple_meta["closest_node"])
 
-        # Step 4
+        # Step 5
 
         terminals_additional_subgraph = self._get_induced_metric_closure(
             graph, terminals + additional_nodes
@@ -64,17 +66,20 @@ class SolverAdvanced116Base(SolverSimple116Base):
             self._contract_edge(graph, node1, node2)
         )
 
-    def findsave(self, graph: nx.Graph, save_matrix: Dict[int, Dict[int, int]]) -> None:
+    def _findsave(self, graph: nx.Graph) -> None:
         gc = graph.copy()
 
-        if gc.number_of_edges() <= 2:
+        if gc.number_of_edges() <= 1:
             return
 
         max_edge = (0, 0)
         max_edge_len = 0
 
         for src, dest, edata in graph.edges(data=True):
-            if max(edata["weight"], edata["distance"]) > max_edge_len:
+            if max(edata["weight"], edata["distance"]) > max_edge_len or max_edge == (
+                0,
+                0,
+            ):
                 max_edge_len = max(edata["weight"], edata["distance"])
                 max_edge = (src, dest)
 
@@ -84,13 +89,15 @@ class SolverAdvanced116Base(SolverSimple116Base):
         T2 = gc.subgraph(T2_nodes).copy()
         for node1 in T1:
             for node2 in T2:
-                save_matrix[node1][node2] = save_matrix[node2][node1] = max_edge_len
+                self._save_matrix[node1][node2] = self._save_matrix[node2][
+                    node1
+                ] = max_edge_len
 
-        self.findsave(T1, save_matrix)
-        self.findsave(T2, save_matrix)
+        self._findsave(T1)
+        self._findsave(T2)
 
     def _voronoi_regions(
-        self, graph: nx.Graph, terminals: List[Tuple[int]]
+        self, graph: nx.Graph, terminals: List[int]
     ) -> Dict[int, List[int]]:
         voronoi_regions = dict()
 
@@ -183,7 +190,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
                 save_matrix[tr[1]][tr[2]],
             ]
 
-            win = max(save_list) - min(save_list) - dist
+            win = max(save_list) + min(save_list) - dist
 
             if win > max_win:
                 max_win = win

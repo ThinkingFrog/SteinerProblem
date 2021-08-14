@@ -77,7 +77,7 @@ class SteinerResult:
                 for graph in self._graph_data.keys()
             ]
         )
-        self._stats_data[algorithm_name]["Runtime average (s)"] = np.std(
+        self._stats_data[algorithm_name]["Runtime average (s)"] = np.mean(
             [
                 self._algorithm_data[graph][algorithm_name]["Runtime (s)"]
                 for graph in self._graph_data.keys()
