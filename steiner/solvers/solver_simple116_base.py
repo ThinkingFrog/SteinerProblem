@@ -5,10 +5,10 @@ import networkx as nx
 from networkx.algorithms.approximation.steinertree import metric_closure
 from networkx.algorithms.tree.mst import minimum_spanning_tree
 
-from steiner.utils.graph import graph_weight_sum
+from steiner.solvers.base_solver import BaseSolver
 
 
-class SolverSimple116:
+class SolverSimple116Base(BaseSolver):
     TRIPLES_META_DATATYPE = List[Dict[str, Union[Tuple[int], int]]]
 
     def solve(self, graph: nx.Graph, terminals: List[int]) -> Tuple[nx.Graph, int]:
@@ -41,25 +41,12 @@ class SolverSimple116:
             graph, terminals + additional_nodes
         )
         steiner_tree = minimum_spanning_tree(terminals_additional_subgraph)
-        steiner_tree_cost = graph_weight_sum(steiner_tree)
+        steiner_tree_cost = self._sum_weight(steiner_tree)
 
         return steiner_tree, steiner_tree_cost
 
     def name(self) -> str:
-        return "11/6"
-
-    def _get_induced_metric_closure(
-        self, graph: nx.Graph, terminals: List[int]
-    ) -> nx.Graph:
-        induced_metric_closure_graph = nx.Graph()
-
-        for term1 in terminals:
-            for term2 in terminals:
-                if term1 != term2:
-                    weight = nx.dijkstra_path_length(graph, term1, term2)
-                    induced_metric_closure_graph.add_edge(term1, term2, weight=weight)
-
-        return induced_metric_closure_graph
+        return "Simple 11/6 Basic"
 
     def _get_triples(self, graph: nx.Graph) -> List[Tuple[int]]:
         triples = list(combinations(graph.nodes, 3))
@@ -105,12 +92,13 @@ class SolverSimple116:
 
         return triples_meta
 
+    def _contract_edge(self, graph: nx.Graph, node1: int, node2: int) -> nx.Graph:
+        return nx.contracted_nodes(graph, node1, node2, self_loops=False)
+
     def _contract_triple(self, graph: nx.Graph, triple: Tuple[int]) -> nx.Graph:
-        intermediate_contracted_graph = nx.contracted_nodes(
-            graph, triple[0], triple[1], self_loops=False
-        )
-        contracted_graph = nx.contracted_nodes(
-            intermediate_contracted_graph, triple[0], triple[2], self_loops=False
+        intermediate_contracted_graph = self._contract_edge(graph, triple[0], triple[1])
+        contracted_graph = self._contract_edge(
+            intermediate_contracted_graph, triple[0], triple[2]
         )
 
         return contracted_graph
@@ -140,11 +128,11 @@ class SolverSimple116:
                 continue
 
             graph_mst = minimum_spanning_tree(graph)
-            graph_mst_cost = graph_weight_sum(graph_mst)
+            graph_mst_cost = self._sum_weight(graph_mst)
 
             contracted_graph = self._contract_triple(graph, tr)
             contracted_graph_mst = minimum_spanning_tree(contracted_graph)
-            contracted_graph_mst_cost = graph_weight_sum(contracted_graph_mst)
+            contracted_graph_mst_cost = self._sum_weight(contracted_graph_mst)
 
             win = graph_mst_cost - contracted_graph_mst_cost - dist
 
