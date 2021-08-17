@@ -26,15 +26,18 @@ class BaseSolver(ABC):
             edata["weight"] = edata["distance"]
         return induced_mc_graph
 
-    #        induced_metric_closure_graph = nx.Graph()
-    #
-    #         for term1 in terminals:
-    #             for term2 in terminals:
-    #                 if term1 != term2:
-    #                     weight = nx.dijkstra_path_length(graph, term1, term2)
-    #                     induced_metric_closure_graph.add_edge(term1, term2, weight=weight)
-    #
-    #        return induced_metric_closure_graph
+    def __get_induced_metric_closure_faster(
+        self, graph: nx.Graph, terminals: List[int]
+    ) -> nx.Graph:
+        induced_metric_closure_graph = nx.Graph()
+
+        for term1 in terminals:
+            for term2 in terminals:
+                if term1 != term2:
+                    weight = nx.dijkstra_path_length(graph, term1, term2)
+                    induced_metric_closure_graph.add_edge(term1, term2, weight=weight)
+
+        return induced_metric_closure_graph
 
     def _sum_weight(self, graph: nx.Graph) -> int:
         return sum(cost for src, dest, cost in graph.edges.data("weight"))
