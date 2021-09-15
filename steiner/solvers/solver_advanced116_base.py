@@ -99,26 +99,44 @@ class SolverAdvanced116Base(SolverSimple116Base):
     def _voronoi_regions(
         self, graph: nx.Graph, terminals: List[int]
     ) -> Dict[int, List[int]]:
-        voronoi_regions = dict()
+        voronoi_regions = defaultdict(list)
 
         mc_graph = metric_closure(graph)
+        nodes_closest_terminals = dict()
 
-        for term in terminals:
+        for node in graph.nodes:
+            if node in terminals:
+                continue
             closest_term_dist = 0
+            closest_term = 0
+            for term in terminals:
+                if (
+                    closest_term_dist == 0
+                    or mc_graph[term][node]["distance"] < closest_term_dist
+                ):
+                    closest_term_dist = mc_graph[term][node]["distance"]
+                    closest_term = term
+            nodes_closest_terminals[node] = closest_term
 
-            for other_term in terminals:
-                if term != other_term:
-                    if (
-                        closest_term_dist == 0
-                        or mc_graph[term][other_term]["distance"] < closest_term_dist
-                    ):
-                        closest_term_dist = mc_graph[term][other_term]["distance"]
+        for node, term in nodes_closest_terminals.items():
+            voronoi_regions[term].append(node)
 
-            voronoi_regions[term] = list()
-            for other_node in graph.nodes:
-                if term != other_node:
-                    if mc_graph[term][other_node]["distance"] < closest_term_dist:
-                        voronoi_regions[term].append(other_node)
+        # for term in terminals:
+        #     closest_term_dist = 0
+        #
+        #     for other_term in terminals:
+        #         if term != other_term:
+        #             if (
+        #                 closest_term_dist == 0
+        #                 or mc_graph[term][other_term]["distance"] < closest_term_dist
+        #             ):
+        #                 closest_term_dist = mc_graph[term][other_term]["distance"]
+        #
+        #     voronoi_regions[term] = list()
+        #     for other_node in graph.nodes:
+        #         if term != other_node:
+        #             if mc_graph[term][other_node]["distance"] < closest_term_dist:
+        #                 voronoi_regions[term].append(other_node)
 
         return voronoi_regions
 
