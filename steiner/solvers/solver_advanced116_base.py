@@ -121,22 +121,16 @@ class SolverAdvanced116Base(SolverSimple116Base):
         for node, term in nodes_closest_terminals.items():
             voronoi_regions[term].append(node)
 
-        # for term in terminals:
-        #     closest_term_dist = 0
-        #
-        #     for other_term in terminals:
-        #         if term != other_term:
-        #             if (
-        #                 closest_term_dist == 0
-        #                 or mc_graph[term][other_term]["distance"] < closest_term_dist
-        #             ):
-        #                 closest_term_dist = mc_graph[term][other_term]["distance"]
-        #
-        #     voronoi_regions[term] = list()
-        #     for other_node in graph.nodes:
-        #         if term != other_node:
-        #             if mc_graph[term][other_node]["distance"] < closest_term_dist:
-        #                 voronoi_regions[term].append(other_node)
+        # Double check that voronoi regions are correct
+        checked_nodes = list()
+        for l in voronoi_regions.values():
+            for node in l:
+                if node in checked_nodes:
+                    raise ValueError("Some nodes in voronoi region are duplicated")
+                checked_nodes.append(node)
+        for node in graph.nodes:
+            if node not in terminals and node not in checked_nodes:
+                raise ValueError("Not all graph nodes are in voronoi regions")
 
         return voronoi_regions
 
@@ -155,12 +149,8 @@ class SolverAdvanced116Base(SolverSimple116Base):
             min_dist = 0
             min_vertex = 0
 
-            for v in list(
-                set(
-                    voronoi_regions[tr[0]]
-                    + voronoi_regions[tr[1]]
-                    + voronoi_regions[tr[2]]
-                )
+            for v in (
+                voronoi_regions[tr[0]] + voronoi_regions[tr[1]] + voronoi_regions[tr[2]]
             ):
                 min_paths_sum = (
                     metric_closure_graph.get_edge_data(v, tr[0])["distance"]
