@@ -55,15 +55,15 @@ def main(data: Path, output: Path):
         graph_info, graph, terminals = parser.parse(data)
 
         for solver in [
-            # SolverKMBBase(),
-            # SolverKMBFull(),
-            # SolverSimple116Base(),
-            # SolverSimple116BaseZeroContract(),
-            # SolverSimple116Full(),
+            SolverKMBBase(),
+            SolverKMBFull(),
+            SolverSimple116Base(),
+            SolverSimple116BaseZeroContract(),
+            SolverSimple116Full(),
             SolverSimple116FullZeroContract(),
-            # SolverAdvanced116Base(),
-            # SolverAdvanced116BaseZeroContract(),
-            # SolverAdvanced116Full(),
+            SolverAdvanced116Base(),
+            SolverAdvanced116BaseZeroContract(),
+            SolverAdvanced116Full(),
             SolverAdvanced116FullZeroContract(),
         ]:
             start_time = time.time()
