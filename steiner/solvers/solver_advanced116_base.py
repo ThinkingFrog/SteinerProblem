@@ -112,7 +112,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
             for term in terminals:
                 if (
                     closest_term_dist == 0
-                    or mc_graph[term][node]["distance"] < closest_term_dist
+                    or mc_graph[term][node]["distance"] <= closest_term_dist
                 ):
                     closest_term_dist = mc_graph[term][node]["distance"]
                     closest_term = term
