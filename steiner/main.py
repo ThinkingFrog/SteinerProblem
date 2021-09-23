@@ -26,7 +26,6 @@ from steiner.solvers.solver_simple116_full import SolverSimple116Full
 from steiner.solvers.solver_simple116_full_zero_contract import (
     SolverSimple116FullZeroContract,
 )
-from steiner.utils.debug_tools import draw_graph
 
 
 @click.command(name="steiner")
@@ -56,15 +55,15 @@ def main(data: Path, output: Path):
         graph_info, graph, terminals = parser.parse(data)
 
         for solver in [
-            # SolverKMBBase(),
-            # SolverKMBFull(),
-            # SolverSimple116Base(),
-            # SolverSimple116BaseZeroContract(),
-            # SolverSimple116Full(),
+            SolverKMBBase(),
+            SolverKMBFull(),
+            SolverSimple116Base(),
+            SolverSimple116BaseZeroContract(),
+            SolverSimple116Full(),
             SolverSimple116FullZeroContract(),
-            # SolverAdvanced116Base(),
-            # SolverAdvanced116BaseZeroContract(),
-            # SolverAdvanced116Full(),
+            SolverAdvanced116Base(),
+            SolverAdvanced116BaseZeroContract(),
+            SolverAdvanced116Full(),
             SolverAdvanced116FullZeroContract(),
         ]:
             start_time = time.time()
@@ -73,9 +72,6 @@ def main(data: Path, output: Path):
 
             finish_time = time.time()
             runtime = finish_time - start_time
-
-            # print(steiner_tree_cost)
-            # draw_graph(steiner_tree, solver.name())
 
             is_valid = validator.validate(steiner_tree, terminals)
             result.add(graph_info, solver.name(), steiner_tree_cost, runtime, is_valid)
