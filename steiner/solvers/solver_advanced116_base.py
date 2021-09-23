@@ -112,7 +112,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
             for term in terminals:
                 if (
                     closest_term_dist == 0
-                    or mc_graph[term][node]["distance"] <= closest_term_dist
+                    or mc_graph[term][node]["distance"] < closest_term_dist
                 ):
                     closest_term_dist = mc_graph[term][node]["distance"]
                     closest_term = term
@@ -120,6 +120,8 @@ class SolverAdvanced116Base(SolverSimple116Base):
 
         for node, term in nodes_closest_terminals.items():
             voronoi_regions[term].append(node)
+        for term in terminals:
+            voronoi_regions[term].append(term)
 
         # Double check that voronoi regions are correct
         checked_nodes = list()
@@ -129,7 +131,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
                     raise ValueError("Some nodes in voronoi region are duplicated")
                 checked_nodes.append(node)
         for node in graph.nodes:
-            if node not in terminals and node not in checked_nodes:
+            if node not in checked_nodes:
                 raise ValueError("Not all graph nodes are in voronoi regions")
 
         return voronoi_regions
@@ -143,11 +145,19 @@ class SolverAdvanced116Base(SolverSimple116Base):
         triples_meta = list()
 
         metric_closure_graph = metric_closure(graph)
+        for node in metric_closure_graph.nodes:
+            metric_closure_graph.add_edge(node, node, distance=0)
 
         for tr in triples:
 
             min_dist = 0
             min_vertex = 0
+
+            if (
+                voronoi_regions[tr[0]] + voronoi_regions[tr[1]] + voronoi_regions[tr[2]]
+                == []
+            ):
+                raise ValueError("Triple has empty union")
 
             for v in (
                 voronoi_regions[tr[0]] + voronoi_regions[tr[1]] + voronoi_regions[tr[2]]
