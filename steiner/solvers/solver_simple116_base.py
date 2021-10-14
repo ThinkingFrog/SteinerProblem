@@ -25,11 +25,14 @@ class SolverSimple116Base(BaseSolver):
 
         additional_nodes = list()
         while True:
+            # a
             win, triple_meta = self._find_win(induced_metric_closure, triples_meta)
 
+            # b
             if win <= 0:
                 break
 
+            # c
             induced_metric_closure = self._contract_triple(
                 induced_metric_closure, triple_meta["triple"]
             )
@@ -50,7 +53,6 @@ class SolverSimple116Base(BaseSolver):
 
     def _get_triples(self, graph: nx.Graph) -> List[Tuple[int]]:
         triples = list(combinations(graph.nodes, 3))
-
         for tr in triples:
             if (
                 tr[0] not in graph[tr[1]]

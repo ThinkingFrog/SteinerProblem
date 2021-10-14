@@ -69,17 +69,14 @@ class SolverAdvanced116Base(SolverSimple116Base):
     def _findsave(self, graph: nx.Graph) -> None:
         gc = graph.copy()
 
-        if gc.number_of_edges() <= 1:
+        if gc.number_of_edges() < 1:
             return
 
         max_edge = (0, 0)
         max_edge_len = 0
 
         for src, dest, edata in graph.edges(data=True):
-            if max(edata["weight"], edata["distance"]) > max_edge_len or max_edge == (
-                0,
-                0,
-            ):
+            if max(edata["weight"], edata["distance"]) > max_edge_len or max_edge == (0,0):
                 max_edge_len = max(edata["weight"], edata["distance"])
                 max_edge = (src, dest)
 
@@ -89,9 +86,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
         T2 = gc.subgraph(T2_nodes).copy()
         for node1 in T1:
             for node2 in T2:
-                self._save_matrix[node1][node2] = self._save_matrix[node2][
-                    node1
-                ] = max_edge_len
+                self._save_matrix[node1][node2] = self._save_matrix[node2][node1] = max_edge_len
 
         self._findsave(T1)
         self._findsave(T2)
@@ -100,7 +95,6 @@ class SolverAdvanced116Base(SolverSimple116Base):
         self, graph: nx.Graph, terminals: List[int]
     ) -> Dict[int, List[int]]:
         voronoi_regions = defaultdict(list)
-
         mc_graph = metric_closure(graph)
         nodes_closest_terminals = dict()
 
@@ -112,6 +106,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
             for term in terminals:
                 if (
                     closest_term_dist == 0
+                # Maybe here "<="
                     or mc_graph[term][node]["distance"] < closest_term_dist
                 ):
                     closest_term_dist = mc_graph[term][node]["distance"]
@@ -120,6 +115,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
 
         for node, term in nodes_closest_terminals.items():
             voronoi_regions[term].append(node)
+
         for term in terminals:
             voronoi_regions[term].append(term)
 
@@ -163,9 +159,9 @@ class SolverAdvanced116Base(SolverSimple116Base):
                 voronoi_regions[tr[0]] + voronoi_regions[tr[1]] + voronoi_regions[tr[2]]
             ):
                 min_paths_sum = (
-                    metric_closure_graph.get_edge_data(v, tr[0])["distance"]
-                    + metric_closure_graph.get_edge_data(v, tr[1])["distance"]
-                    + metric_closure_graph.get_edge_data(v, tr[2])["distance"]
+                        metric_closure_graph.get_edge_data(v, tr[0])["distance"]
+                        + metric_closure_graph.get_edge_data(v, tr[1])["distance"]
+                        + metric_closure_graph.get_edge_data(v, tr[2])["distance"]
                 )
                 if min_dist == 0 or min_paths_sum < min_dist:
                     min_dist = min_paths_sum
