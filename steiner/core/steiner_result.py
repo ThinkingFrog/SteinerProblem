@@ -83,6 +83,12 @@ class SteinerResult:
                 for graph in self._graph_data.keys()
             ]
         )
+        self._stats_data[algorithm_name]["Runtime std deviation (s)"] = np.std(
+            [
+                self._algorithm_data[graph][algorithm_name]["Runtime (s)"]
+                for graph in self._graph_data.keys()
+            ]
+        )
 
     def write_to_json(self, json_file_path: Path) -> None:
         with json_file_path.open("w") as f:
