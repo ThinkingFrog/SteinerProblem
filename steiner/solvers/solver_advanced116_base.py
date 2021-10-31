@@ -106,7 +106,6 @@ class SolverAdvanced116Base(SolverSimple116Base):
             for term in terminals:
                 if (
                     closest_term_dist == 0
-                # Maybe here "<="
                     or mc_graph[term][node]["distance"] < closest_term_dist
                 ):
                     closest_term_dist = mc_graph[term][node]["distance"]
@@ -163,7 +162,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
                         + metric_closure_graph.get_edge_data(v, tr[1])["distance"]
                         + metric_closure_graph.get_edge_data(v, tr[2])["distance"]
                 )
-                if min_dist == 0 or min_paths_sum < min_dist:
+                if min_dist == 0 or min_paths_sum <= min_dist:
                     min_dist = min_paths_sum
                     min_vertex = v
 
