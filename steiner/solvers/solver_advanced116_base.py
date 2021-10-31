@@ -114,7 +114,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
 
         for node, term in nodes_closest_terminals.items():
             voronoi_regions[term].append(node)
-
+            
         for term in terminals:
             voronoi_regions[term].append(term)
 
