@@ -1,6 +1,6 @@
 # SteinerProblem
 
-Bachelor's diploma work on Steiner Tree problem
+Steiner Tree problem Proof of concept
 
 ## Formatting
 
