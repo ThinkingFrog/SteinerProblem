@@ -1,6 +1,6 @@
 # SteinerProblem
 
-Steiner Tree problem Proof of concept
+Steiner Tree problem proof of concept
 
 ## Formatting
 
