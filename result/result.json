@@ -8,70 +8,70 @@
             "Steiner tree cost": 94,
             "Absolute error": 12,
             "Relative error (%)": 14.634146341463406,
-            "Runtime (s)": 0.007883310317993164,
+            "Runtime (s)": 0.009001970291137695,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.006796360015869141,
+            "Runtime (s)": 0.004822731018066406,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.11141490936279297,
+            "Runtime (s)": 0.08154511451721191,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.1531674861907959,
+            "Runtime (s)": 0.10709619522094727,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.11447978019714355,
+            "Runtime (s)": 0.07086992263793945,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.15092206001281738,
+            "Runtime (s)": 0.1074361801147461,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.029078006744384766,
+            "Runtime (s)": 0.02150893211364746,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.02994060516357422,
+            "Runtime (s)": 0.021184206008911133,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.02914571762084961,
+            "Runtime (s)": 0.020909786224365234,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 82,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.030285358428955078,
+            "Runtime (s)": 0.02153491973876953,
             "Validated": true
         }
     },
@@ -84,70 +84,70 @@
             "Steiner tree cost": 97,
             "Absolute error": 14,
             "Relative error (%)": 16.867469879518083,
-            "Runtime (s)": 0.006680727005004883,
+            "Runtime (s)": 0.0050678253173828125,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 90,
             "Absolute error": 7,
             "Relative error (%)": 8.43373493975903,
-            "Runtime (s)": 0.008184671401977539,
+            "Runtime (s)": 0.0048580169677734375,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 84,
             "Absolute error": 1,
             "Relative error (%)": 1.2048192771084265,
-            "Runtime (s)": 0.5556960105895996,
+            "Runtime (s)": 0.3944885730743408,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 83,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1.0593464374542236,
+            "Runtime (s)": 0.7242169380187988,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 83,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.5809357166290283,
+            "Runtime (s)": 0.3883650302886963,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 83,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1.0536766052246094,
+            "Runtime (s)": 0.7267563343048096,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 84,
             "Absolute error": 1,
             "Relative error (%)": 1.2048192771084265,
-            "Runtime (s)": 0.05332040786743164,
+            "Runtime (s)": 0.0374293327331543,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 83,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.05433058738708496,
+            "Runtime (s)": 0.03162860870361328,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 83,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.05110645294189453,
+            "Runtime (s)": 0.030627727508544922,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 83,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.05052685737609863,
+            "Runtime (s)": 0.0321195125579834,
             "Validated": true
         }
     },
@@ -160,70 +160,70 @@
             "Steiner tree cost": 140,
             "Absolute error": 2,
             "Relative error (%)": 1.449275362318847,
-            "Runtime (s)": 0.009044170379638672,
+            "Runtime (s)": 0.006516933441162109,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 140,
             "Absolute error": 2,
             "Relative error (%)": 1.449275362318847,
-            "Runtime (s)": 0.010254621505737305,
+            "Runtime (s)": 0.00641179084777832,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 140,
             "Absolute error": 2,
             "Relative error (%)": 1.449275362318847,
-            "Runtime (s)": 8.895399808883667,
+            "Runtime (s)": 6.927191734313965,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 139,
             "Absolute error": 1,
             "Relative error (%)": 0.7246376811594235,
-            "Runtime (s)": 12.217682838439941,
+            "Runtime (s)": 10.856534242630005,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 140,
             "Absolute error": 2,
             "Relative error (%)": 1.449275362318847,
-            "Runtime (s)": 6.723231315612793,
+            "Runtime (s)": 6.702790021896362,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 139,
             "Absolute error": 1,
             "Relative error (%)": 0.7246376811594235,
-            "Runtime (s)": 10.808462619781494,
+            "Runtime (s)": 10.60392165184021,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 139,
             "Absolute error": 1,
             "Relative error (%)": 0.7246376811594235,
-            "Runtime (s)": 0.20419597625732422,
+            "Runtime (s)": 0.1999950408935547,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 139,
             "Absolute error": 1,
             "Relative error (%)": 0.7246376811594235,
-            "Runtime (s)": 0.22414588928222656,
+            "Runtime (s)": 0.19756555557250977,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 139,
             "Absolute error": 1,
             "Relative error (%)": 0.7246376811594235,
-            "Runtime (s)": 0.2189638614654541,
+            "Runtime (s)": 0.20854759216308594,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 139,
             "Absolute error": 1,
             "Relative error (%)": 0.7246376811594235,
-            "Runtime (s)": 0.20976734161376953,
+            "Runtime (s)": 0.2002573013305664,
             "Validated": true
         }
     },
@@ -236,70 +236,70 @@
             "Steiner tree cost": 68,
             "Absolute error": 9,
             "Relative error (%)": 15.254237288135597,
-            "Runtime (s)": 0.006761074066162109,
+            "Runtime (s)": 0.0058324337005615234,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0059893131256103516,
+            "Runtime (s)": 0.006011962890625,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 68,
             "Absolute error": 9,
             "Relative error (%)": 15.254237288135597,
-            "Runtime (s)": 0.06679964065551758,
+            "Runtime (s)": 0.06497550010681152,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.14657139778137207,
+            "Runtime (s)": 0.12927603721618652,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.07726359367370605,
+            "Runtime (s)": 0.07616710662841797,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.13325715065002441,
+            "Runtime (s)": 0.1300675868988037,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 61,
             "Absolute error": 2,
             "Relative error (%)": 3.3898305084745672,
-            "Runtime (s)": 0.025009632110595703,
+            "Runtime (s)": 0.02610492706298828,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.02574300765991211,
+            "Runtime (s)": 0.02765059471130371,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.025852441787719727,
+            "Runtime (s)": 0.025213956832885742,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 59,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.027822017669677734,
+            "Runtime (s)": 0.027651309967041016,
             "Validated": true
         }
     },
@@ -312,70 +312,70 @@
             "Steiner tree cost": 67,
             "Absolute error": 6,
             "Relative error (%)": 9.836065573770503,
-            "Runtime (s)": 0.0064203739166259766,
+            "Runtime (s)": 0.006512641906738281,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 64,
             "Absolute error": 3,
             "Relative error (%)": 4.918032786885251,
-            "Runtime (s)": 0.006144285202026367,
+            "Runtime (s)": 0.00679779052734375,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 64,
             "Absolute error": 3,
             "Relative error (%)": 4.918032786885251,
-            "Runtime (s)": 0.37077927589416504,
+            "Runtime (s)": 0.36110806465148926,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 62,
             "Absolute error": 1,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.7678284645080566,
+            "Runtime (s)": 0.7159554958343506,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 61,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.37307000160217285,
+            "Runtime (s)": 0.3749215602874756,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 62,
             "Absolute error": 1,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.7886786460876465,
+            "Runtime (s)": 0.7156562805175781,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 62,
             "Absolute error": 1,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.04039740562438965,
+            "Runtime (s)": 0.035300254821777344,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 62,
             "Absolute error": 1,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.052045345306396484,
+            "Runtime (s)": 0.0442659854888916,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 62,
             "Absolute error": 1,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.040819644927978516,
+            "Runtime (s)": 0.0384521484375,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 62,
             "Absolute error": 1,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.0432896614074707,
+            "Runtime (s)": 0.040645599365234375,
             "Validated": true
         }
     },
@@ -388,70 +388,70 @@
             "Steiner tree cost": 128,
             "Absolute error": 6,
             "Relative error (%)": 4.918032786885251,
-            "Runtime (s)": 0.010496139526367188,
+            "Runtime (s)": 0.007350921630859375,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 127,
             "Absolute error": 5,
             "Relative error (%)": 4.098360655737698,
-            "Runtime (s)": 0.011308908462524414,
+            "Runtime (s)": 0.007555961608886719,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 126,
             "Absolute error": 4,
             "Relative error (%)": 3.2786885245901676,
-            "Runtime (s)": 9.116747379302979,
+            "Runtime (s)": 8.912907838821411,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 125,
             "Absolute error": 3,
             "Relative error (%)": 2.4590163934426146,
-            "Runtime (s)": 19.886967658996582,
+            "Runtime (s)": 14.383095026016235,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 126,
             "Absolute error": 4,
             "Relative error (%)": 3.2786885245901676,
-            "Runtime (s)": 10.266005039215088,
+            "Runtime (s)": 8.967536926269531,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 124,
             "Absolute error": 2,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 17.410271883010864,
+            "Runtime (s)": 14.328046083450317,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 126,
             "Absolute error": 4,
             "Relative error (%)": 3.2786885245901676,
-            "Runtime (s)": 0.24471235275268555,
+            "Runtime (s)": 0.2507622241973877,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 125,
             "Absolute error": 3,
             "Relative error (%)": 2.4590163934426146,
-            "Runtime (s)": 0.21715641021728516,
+            "Runtime (s)": 0.2162628173828125,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 126,
             "Absolute error": 4,
             "Relative error (%)": 3.2786885245901676,
-            "Runtime (s)": 0.2459712028503418,
+            "Runtime (s)": 0.24923229217529297,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 124,
             "Absolute error": 2,
             "Relative error (%)": 1.6393442622950838,
-            "Runtime (s)": 0.22450923919677734,
+            "Runtime (s)": 0.21939873695373535,
             "Validated": true
         }
     },
@@ -464,70 +464,70 @@
             "Steiner tree cost": 141,
             "Absolute error": 30,
             "Relative error (%)": 27.027027027027017,
-            "Runtime (s)": 0.009920120239257812,
+            "Runtime (s)": 0.010196924209594727,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.009566068649291992,
+            "Runtime (s)": 0.010639429092407227,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 132,
             "Absolute error": 21,
             "Relative error (%)": 18.918918918918926,
-            "Runtime (s)": 0.4115161895751953,
+            "Runtime (s)": 0.41049623489379883,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1.1264102458953857,
+            "Runtime (s)": 1.0389766693115234,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.4656331539154053,
+            "Runtime (s)": 0.4228188991546631,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1.0550026893615723,
+            "Runtime (s)": 1.0492751598358154,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 117,
             "Absolute error": 6,
             "Relative error (%)": 5.405405405405395,
-            "Runtime (s)": 0.05316329002380371,
+            "Runtime (s)": 0.05152177810668945,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.05874133110046387,
+            "Runtime (s)": 0.05841326713562012,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0518336296081543,
+            "Runtime (s)": 0.054981231689453125,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 111,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.06535673141479492,
+            "Runtime (s)": 0.0666201114654541,
             "Validated": true
         }
     },
@@ -540,70 +540,70 @@
             "Steiner tree cost": 114,
             "Absolute error": 10,
             "Relative error (%)": 9.615384615384626,
-            "Runtime (s)": 0.011433601379394531,
+            "Runtime (s)": 0.010268926620483398,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 104,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.010138988494873047,
+            "Runtime (s)": 0.01094961166381836,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 112,
             "Absolute error": 8,
             "Relative error (%)": 7.692307692307687,
-            "Runtime (s)": 2.5779871940612793,
+            "Runtime (s)": 2.465916156768799,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 106,
             "Absolute error": 2,
             "Relative error (%)": 1.9230769230769162,
-            "Runtime (s)": 6.956872224807739,
+            "Runtime (s)": 4.652173757553101,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 104,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 3.4118900299072266,
+            "Runtime (s)": 2.4748103618621826,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 105,
             "Absolute error": 1,
             "Relative error (%)": 0.9615384615384581,
-            "Runtime (s)": 4.9177727699279785,
+            "Runtime (s)": 4.706892967224121,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 109,
             "Absolute error": 5,
             "Relative error (%)": 4.807692307692313,
-            "Runtime (s)": 0.09081196784973145,
+            "Runtime (s)": 0.09276342391967773,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 106,
             "Absolute error": 2,
             "Relative error (%)": 1.9230769230769162,
-            "Runtime (s)": 0.08769798278808594,
+            "Runtime (s)": 0.08461713790893555,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 105,
             "Absolute error": 1,
             "Relative error (%)": 0.9615384615384581,
-            "Runtime (s)": 0.09341740608215332,
+            "Runtime (s)": 0.0931100845336914,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 105,
             "Absolute error": 1,
             "Relative error (%)": 0.9615384615384581,
-            "Runtime (s)": 0.10137104988098145,
+            "Runtime (s)": 0.09627819061279297,
             "Validated": true
         }
     },
@@ -616,70 +616,70 @@
             "Steiner tree cost": 236,
             "Absolute error": 16,
             "Relative error (%)": 7.272727272727275,
-            "Runtime (s)": 0.01318669319152832,
+            "Runtime (s)": 0.013110637664794922,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 224,
             "Absolute error": 4,
             "Relative error (%)": 1.8181818181818077,
-            "Runtime (s)": 0.014323949813842773,
+            "Runtime (s)": 0.014200925827026367,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 230,
             "Absolute error": 10,
             "Relative error (%)": 4.545454545454541,
-            "Runtime (s)": 110.68683362007141,
+            "Runtime (s)": 97.12025475502014,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 221,
             "Absolute error": 1,
             "Relative error (%)": 0.454545454545463,
-            "Runtime (s)": 203.38816738128662,
+            "Runtime (s)": 193.4431619644165,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 221,
             "Absolute error": 1,
             "Relative error (%)": 0.454545454545463,
-            "Runtime (s)": 104.8241982460022,
+            "Runtime (s)": 106.97163891792297,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 221,
             "Absolute error": 1,
             "Relative error (%)": 0.454545454545463,
-            "Runtime (s)": 182.62967157363892,
+            "Runtime (s)": 190.7871356010437,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 228,
-            "Absolute error": 8,
-            "Relative error (%)": 3.6363636363636376,
-            "Runtime (s)": 1.1494646072387695,
+            "Steiner tree cost": 224,
+            "Absolute error": 4,
+            "Relative error (%)": 1.8181818181818077,
+            "Runtime (s)": 1.263704538345337,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 225,
-            "Absolute error": 5,
-            "Relative error (%)": 2.2727272727272707,
-            "Runtime (s)": 1.0168194770812988,
+            "Steiner tree cost": 221,
+            "Absolute error": 1,
+            "Relative error (%)": 0.454545454545463,
+            "Runtime (s)": 1.1987223625183105,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 222,
             "Absolute error": 2,
             "Relative error (%)": 0.9090909090909038,
-            "Runtime (s)": 1.1023478507995605,
+            "Runtime (s)": 1.287714958190918,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 221,
             "Absolute error": 1,
             "Relative error (%)": 0.454545454545463,
-            "Runtime (s)": 1.0145180225372314,
+            "Runtime (s)": 1.2180585861206055,
             "Validated": true
         }
     },
@@ -692,70 +692,70 @@
             "Steiner tree cost": 105,
             "Absolute error": 19,
             "Relative error (%)": 22.093023255813947,
-            "Runtime (s)": 0.03422045707702637,
+            "Runtime (s)": 0.023798704147338867,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 98,
             "Absolute error": 12,
             "Relative error (%)": 13.953488372093027,
-            "Runtime (s)": 0.019327878952026367,
+            "Runtime (s)": 0.018381595611572266,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 102,
             "Absolute error": 16,
             "Relative error (%)": 18.60465116279071,
-            "Runtime (s)": 0.4222555160522461,
+            "Runtime (s)": 0.4962499141693115,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 93,
             "Absolute error": 7,
             "Relative error (%)": 8.139534883720923,
-            "Runtime (s)": 1.064253330230713,
+            "Runtime (s)": 1.106210708618164,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 96,
             "Absolute error": 10,
             "Relative error (%)": 11.627906976744185,
-            "Runtime (s)": 0.4240376949310303,
+            "Runtime (s)": 0.42677927017211914,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 87,
             "Absolute error": 1,
             "Relative error (%)": 1.1627906976744207,
-            "Runtime (s)": 1.0692381858825684,
+            "Runtime (s)": 1.0745625495910645,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 96,
             "Absolute error": 10,
             "Relative error (%)": 11.627906976744185,
-            "Runtime (s)": 0.06718015670776367,
+            "Runtime (s)": 0.07181859016418457,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 93,
             "Absolute error": 7,
             "Relative error (%)": 8.139534883720923,
-            "Runtime (s)": 0.06660890579223633,
+            "Runtime (s)": 0.07072782516479492,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 89,
             "Absolute error": 3,
             "Relative error (%)": 3.488372093023262,
-            "Runtime (s)": 0.060062408447265625,
+            "Runtime (s)": 0.06599855422973633,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 87,
             "Absolute error": 1,
             "Relative error (%)": 1.1627906976744207,
-            "Runtime (s)": 0.06658101081848145,
+            "Runtime (s)": 0.06795024871826172,
             "Validated": true
         }
     },
@@ -768,70 +768,70 @@
             "Steiner tree cost": 97,
             "Absolute error": 9,
             "Relative error (%)": 10.22727272727273,
-            "Runtime (s)": 0.012487173080444336,
+            "Runtime (s)": 0.024593114852905273,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 93,
             "Absolute error": 5,
             "Relative error (%)": 5.681818181818188,
-            "Runtime (s)": 0.013042449951171875,
+            "Runtime (s)": 0.01342630386352539,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 94,
             "Absolute error": 6,
             "Relative error (%)": 6.818181818181812,
-            "Runtime (s)": 2.469557046890259,
+            "Runtime (s)": 2.6308701038360596,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 88,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 6.6138832569122314,
+            "Runtime (s)": 7.156165599822998,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 92,
             "Absolute error": 4,
             "Relative error (%)": 4.545454545454541,
-            "Runtime (s)": 2.4807677268981934,
+            "Runtime (s)": 2.517061233520508,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 88,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 6.778478145599365,
+            "Runtime (s)": 7.419763088226318,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 93,
-            "Absolute error": 5,
-            "Relative error (%)": 5.681818181818188,
-            "Runtime (s)": 0.10208892822265625,
+            "Steiner tree cost": 94,
+            "Absolute error": 6,
+            "Relative error (%)": 6.818181818181812,
+            "Runtime (s)": 0.1290745735168457,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 88,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.11170554161071777,
+            "Runtime (s)": 0.12059974670410156,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 91,
-            "Absolute error": 3,
-            "Relative error (%)": 3.409090909090917,
-            "Runtime (s)": 0.09480953216552734,
+            "Steiner tree cost": 92,
+            "Absolute error": 4,
+            "Relative error (%)": 4.545454545454541,
+            "Runtime (s)": 0.11909842491149902,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 88,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.10473299026489258,
+            "Runtime (s)": 0.14893436431884766,
             "Validated": true
         }
     },
@@ -844,70 +844,70 @@
             "Steiner tree cost": 179,
             "Absolute error": 5,
             "Relative error (%)": 2.8735632183908066,
-            "Runtime (s)": 0.015598297119140625,
+            "Runtime (s)": 0.018019676208496094,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 174,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.025815725326538086,
+            "Runtime (s)": 0.018239974975585938,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 179,
             "Absolute error": 5,
             "Relative error (%)": 2.8735632183908066,
-            "Runtime (s)": 63.18105626106262,
+            "Runtime (s)": 62.26522207260132,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 174,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 164.92630290985107,
+            "Runtime (s)": 162.05849885940552,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 174,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 65.07498693466187,
+            "Runtime (s)": 61.30451512336731,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 174,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 165.56982040405273,
+            "Runtime (s)": 168.83494400978088,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 175,
-            "Absolute error": 1,
-            "Relative error (%)": 0.5747126436781658,
-            "Runtime (s)": 1.1973886489868164,
+            "Steiner tree cost": 178,
+            "Absolute error": 4,
+            "Relative error (%)": 2.298850574712641,
+            "Runtime (s)": 1.1695516109466553,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 174,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1.2488954067230225,
+            "Runtime (s)": 1.1093664169311523,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 175,
-            "Absolute error": 1,
-            "Relative error (%)": 0.5747126436781658,
-            "Runtime (s)": 1.6586904525756836,
+            "Steiner tree cost": 174,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 1.186156988143921,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 174,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1.5634150505065918,
+            "Runtime (s)": 1.1115837097167969,
             "Validated": true
         }
     },
@@ -920,70 +920,70 @@
             "Steiner tree cost": 194,
             "Absolute error": 29,
             "Relative error (%)": 17.575757575757578,
-            "Runtime (s)": 0.025246143341064453,
+            "Runtime (s)": 0.019594907760620117,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 175,
             "Absolute error": 10,
             "Relative error (%)": 6.060606060606055,
-            "Runtime (s)": 0.0256197452545166,
+            "Runtime (s)": 0.019385337829589844,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 186,
             "Absolute error": 21,
             "Relative error (%)": 12.72727272727272,
-            "Runtime (s)": 2.273358106613159,
+            "Runtime (s)": 1.73988938331604,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 175,
             "Absolute error": 10,
             "Relative error (%)": 6.060606060606055,
-            "Runtime (s)": 3.5717928409576416,
+            "Runtime (s)": 3.7186379432678223,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 175,
             "Absolute error": 10,
             "Relative error (%)": 6.060606060606055,
-            "Runtime (s)": 1.6884922981262207,
+            "Runtime (s)": 1.7242426872253418,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 170,
             "Absolute error": 5,
             "Relative error (%)": 3.0303030303030276,
-            "Runtime (s)": 3.5216593742370605,
+            "Runtime (s)": 3.702611207962036,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 178,
             "Absolute error": 13,
             "Relative error (%)": 7.878787878787885,
-            "Runtime (s)": 0.11218857765197754,
+            "Runtime (s)": 0.12431216239929199,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 175,
             "Absolute error": 10,
             "Relative error (%)": 6.060606060606055,
-            "Runtime (s)": 0.11073422431945801,
+            "Runtime (s)": 0.11442255973815918,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 173,
             "Absolute error": 8,
             "Relative error (%)": 4.8484848484848575,
-            "Runtime (s)": 0.11315369606018066,
+            "Runtime (s)": 0.1216437816619873,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 170,
             "Absolute error": 5,
             "Relative error (%)": 3.0303030303030276,
-            "Runtime (s)": 0.10855960845947266,
+            "Runtime (s)": 0.11483383178710938,
             "Validated": true
         }
     },
@@ -996,70 +996,70 @@
             "Steiner tree cost": 273,
             "Absolute error": 38,
             "Relative error (%)": 16.170212765957448,
-            "Runtime (s)": 0.018465757369995117,
+            "Runtime (s)": 0.023407697677612305,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 237,
             "Absolute error": 2,
             "Relative error (%)": 0.8510638297872353,
-            "Runtime (s)": 0.019019126892089844,
+            "Runtime (s)": 0.019842863082885742,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 240,
             "Absolute error": 5,
             "Relative error (%)": 2.127659574468077,
-            "Runtime (s)": 13.929290056228638,
+            "Runtime (s)": 14.1678147315979,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 238,
             "Absolute error": 3,
             "Relative error (%)": 1.2765957446808418,
-            "Runtime (s)": 36.18053340911865,
+            "Runtime (s)": 39.94108486175537,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 236,
             "Absolute error": 1,
             "Relative error (%)": 0.42553191489360653,
-            "Runtime (s)": 14.218305349349976,
+            "Runtime (s)": 14.180532217025757,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 237,
             "Absolute error": 2,
             "Relative error (%)": 0.8510638297872353,
-            "Runtime (s)": 37.34619927406311,
+            "Runtime (s)": 37.568384885787964,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 242,
-            "Absolute error": 7,
-            "Relative error (%)": 2.9787234042553123,
-            "Runtime (s)": 0.22959589958190918,
+            "Steiner tree cost": 249,
+            "Absolute error": 14,
+            "Relative error (%)": 5.957446808510647,
+            "Runtime (s)": 0.2114262580871582,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 241,
-            "Absolute error": 6,
-            "Relative error (%)": 2.553191489361706,
-            "Runtime (s)": 0.2536430358886719,
+            "Steiner tree cost": 238,
+            "Absolute error": 3,
+            "Relative error (%)": 1.2765957446808418,
+            "Runtime (s)": 0.2534668445587158,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 236,
-            "Absolute error": 1,
-            "Relative error (%)": 0.42553191489360653,
-            "Runtime (s)": 0.22667479515075684,
+            "Steiner tree cost": 244,
+            "Absolute error": 9,
+            "Relative error (%)": 3.8297872340425476,
+            "Runtime (s)": 0.2231135368347168,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 237,
             "Absolute error": 2,
             "Relative error (%)": 0.8510638297872353,
-            "Runtime (s)": 0.25339674949645996,
+            "Runtime (s)": 0.2507920265197754,
             "Validated": true
         }
     },
@@ -1072,70 +1072,70 @@
             "Steiner tree cost": 338,
             "Absolute error": 20,
             "Relative error (%)": 6.2893081761006275,
-            "Runtime (s)": 0.02634716033935547,
+            "Runtime (s)": 0.0242006778717041,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 323,
             "Absolute error": 5,
             "Relative error (%)": 1.572327044025168,
-            "Runtime (s)": 0.027423858642578125,
+            "Runtime (s)": 0.02517080307006836,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 329,
             "Absolute error": 11,
             "Relative error (%)": 3.4591194968553562,
-            "Runtime (s)": 375.52765417099,
+            "Runtime (s)": 367.0107238292694,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 318,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1106.6206974983215,
+            "Runtime (s)": 1074.3654708862305,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 323,
             "Absolute error": 5,
             "Relative error (%)": 1.572327044025168,
-            "Runtime (s)": 355.6756548881531,
+            "Runtime (s)": 364.7981662750244,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 318,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1064.813989162445,
+            "Runtime (s)": 1081.9046149253845,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 328,
             "Absolute error": 10,
             "Relative error (%)": 3.1446540880503138,
-            "Runtime (s)": 4.428986072540283,
+            "Runtime (s)": 3.6708786487579346,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 318,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 5.051549673080444,
+            "Runtime (s)": 3.3740174770355225,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 323,
             "Absolute error": 5,
             "Relative error (%)": 1.572327044025168,
-            "Runtime (s)": 5.749863147735596,
+            "Runtime (s)": 3.6601831912994385,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 318,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 3.997488021850586,
+            "Runtime (s)": 3.3120195865631104,
             "Validated": true
         }
     },
@@ -1148,70 +1148,70 @@
             "Steiner tree cost": 138,
             "Absolute error": 11,
             "Relative error (%)": 8.661417322834652,
-            "Runtime (s)": 0.024684429168701172,
+            "Runtime (s)": 0.026822805404663086,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 137,
             "Absolute error": 10,
             "Relative error (%)": 7.874015748031504,
-            "Runtime (s)": 0.026565074920654297,
+            "Runtime (s)": 0.024143457412719727,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 137,
             "Absolute error": 10,
             "Relative error (%)": 7.874015748031504,
-            "Runtime (s)": 1.847475290298462,
+            "Runtime (s)": 1.7558948993682861,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 130,
             "Absolute error": 3,
             "Relative error (%)": 2.3622047244094446,
-            "Runtime (s)": 3.159102201461792,
+            "Runtime (s)": 2.6310017108917236,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 137,
             "Absolute error": 10,
             "Relative error (%)": 7.874015748031504,
-            "Runtime (s)": 2.550797939300537,
+            "Runtime (s)": 1.769502878189087,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 130,
             "Absolute error": 3,
             "Relative error (%)": 2.3622047244094446,
-            "Runtime (s)": 2.7401814460754395,
+            "Runtime (s)": 2.6290669441223145,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 130,
             "Absolute error": 3,
             "Relative error (%)": 2.3622047244094446,
-            "Runtime (s)": 0.1356191635131836,
+            "Runtime (s)": 0.12711191177368164,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 130,
             "Absolute error": 3,
             "Relative error (%)": 2.3622047244094446,
-            "Runtime (s)": 0.13079476356506348,
+            "Runtime (s)": 0.13894152641296387,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 127,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.13684463500976562,
+            "Runtime (s)": 0.12405014038085938,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 130,
             "Absolute error": 3,
             "Relative error (%)": 2.3622047244094446,
-            "Runtime (s)": 0.12988829612731934,
+            "Runtime (s)": 0.14034819602966309,
             "Validated": true
         }
     },
@@ -1224,70 +1224,70 @@
             "Steiner tree cost": 145,
             "Absolute error": 14,
             "Relative error (%)": 10.687022900763354,
-            "Runtime (s)": 0.025580644607543945,
+            "Runtime (s)": 0.02484583854675293,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 133,
             "Absolute error": 2,
             "Relative error (%)": 1.526717557251911,
-            "Runtime (s)": 0.03377699851989746,
+            "Runtime (s)": 0.025780677795410156,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 143,
             "Absolute error": 12,
             "Relative error (%)": 9.160305343511443,
-            "Runtime (s)": 11.806852579116821,
+            "Runtime (s)": 10.8744056224823,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 133,
             "Absolute error": 2,
             "Relative error (%)": 1.526717557251911,
-            "Runtime (s)": 40.23521447181702,
+            "Runtime (s)": 33.28716969490051,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 133,
             "Absolute error": 2,
             "Relative error (%)": 1.526717557251911,
-            "Runtime (s)": 13.440165758132935,
+            "Runtime (s)": 10.940319299697876,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 131,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 38.67236328125,
+            "Runtime (s)": 33.536778926849365,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 135,
-            "Absolute error": 4,
-            "Relative error (%)": 3.053435114503822,
-            "Runtime (s)": 0.2810788154602051,
+            "Steiner tree cost": 136,
+            "Absolute error": 5,
+            "Relative error (%)": 3.8167938931297662,
+            "Runtime (s)": 0.24444580078125,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 133,
             "Absolute error": 2,
             "Relative error (%)": 1.526717557251911,
-            "Runtime (s)": 0.3704373836517334,
+            "Runtime (s)": 0.26034069061279297,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 132,
             "Absolute error": 1,
             "Relative error (%)": 0.7633587786259444,
-            "Runtime (s)": 0.2747495174407959,
+            "Runtime (s)": 0.24611711502075195,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 131,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.27013540267944336,
+            "Runtime (s)": 0.26822328567504883,
             "Validated": true
         }
     },
@@ -1300,70 +1300,70 @@
             "Steiner tree cost": 234,
             "Absolute error": 16,
             "Relative error (%)": 7.339449541284404,
-            "Runtime (s)": 0.03034687042236328,
+            "Runtime (s)": 0.028797388076782227,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 224,
             "Absolute error": 6,
             "Relative error (%)": 2.752293577981657,
-            "Runtime (s)": 0.031089067459106445,
+            "Runtime (s)": 0.030490398406982422,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 234,
             "Absolute error": 16,
             "Relative error (%)": 7.339449541284404,
-            "Runtime (s)": 245.4578161239624,
+            "Runtime (s)": 248.61349272727966,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 218,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1330.6339013576508,
+            "Runtime (s)": 1550.827172756195,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 224,
             "Absolute error": 6,
             "Relative error (%)": 2.752293577981657,
-            "Runtime (s)": 248.78627371788025,
+            "Runtime (s)": 300.41586804389954,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 218,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 1247.662822008133,
+            "Runtime (s)": 1485.7132425308228,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 225,
-            "Absolute error": 7,
-            "Relative error (%)": 3.2110091743119185,
-            "Runtime (s)": 3.3969554901123047,
+            "Steiner tree cost": 227,
+            "Absolute error": 9,
+            "Relative error (%)": 4.128440366972486,
+            "Runtime (s)": 3.8154687881469727,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 218,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 4.745543956756592,
+            "Runtime (s)": 3.496352195739746,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 223,
-            "Absolute error": 5,
-            "Relative error (%)": 2.2935779816513735,
-            "Runtime (s)": 3.963334560394287,
+            "Steiner tree cost": 221,
+            "Absolute error": 3,
+            "Relative error (%)": 1.3761467889908285,
+            "Runtime (s)": 3.8980886936187744,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 218,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 4.846611976623535,
+            "Runtime (s)": 3.7090542316436768,
             "Validated": true
         }
     },
@@ -1376,70 +1376,70 @@
             "Steiner tree cost": 106,
             "Absolute error": 21,
             "Relative error (%)": 24.705882352941178,
-            "Runtime (s)": 0.7080941200256348,
+            "Runtime (s)": 0.6353762149810791,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 88,
             "Absolute error": 3,
             "Relative error (%)": 3.529411764705892,
-            "Runtime (s)": 0.7059965133666992,
+            "Runtime (s)": 0.6280636787414551,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 94,
             "Absolute error": 9,
             "Relative error (%)": 10.588235294117654,
-            "Runtime (s)": 2.2912144660949707,
+            "Runtime (s)": 2.077326774597168,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 89,
             "Absolute error": 4,
             "Relative error (%)": 4.705882352941182,
-            "Runtime (s)": 1.9019443988800049,
+            "Runtime (s)": 1.970923662185669,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 88,
             "Absolute error": 3,
             "Relative error (%)": 3.529411764705892,
-            "Runtime (s)": 1.8969736099243164,
+            "Runtime (s)": 2.1096951961517334,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 87,
             "Absolute error": 2,
             "Relative error (%)": 2.35294117647058,
-            "Runtime (s)": 1.9011549949645996,
+            "Runtime (s)": 2.074380874633789,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 95,
-            "Absolute error": 10,
-            "Relative error (%)": 11.764705882352944,
-            "Runtime (s)": 2.6009175777435303,
+            "Steiner tree cost": 94,
+            "Absolute error": 9,
+            "Relative error (%)": 10.588235294117654,
+            "Runtime (s)": 2.829542398452759,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 91,
-            "Absolute error": 6,
-            "Relative error (%)": 7.058823529411762,
-            "Runtime (s)": 2.874910831451416,
+            "Steiner tree cost": 89,
+            "Absolute error": 4,
+            "Relative error (%)": 4.705882352941182,
+            "Runtime (s)": 2.8527491092681885,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 89,
-            "Absolute error": 4,
-            "Relative error (%)": 4.705882352941182,
-            "Runtime (s)": 3.314847946166992,
+            "Steiner tree cost": 88,
+            "Absolute error": 3,
+            "Relative error (%)": 3.529411764705892,
+            "Runtime (s)": 2.8971569538116455,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
-            "Steiner tree cost": 89,
-            "Absolute error": 4,
-            "Relative error (%)": 4.705882352941182,
-            "Runtime (s)": 3.347520351409912,
+            "Steiner tree cost": 87,
+            "Absolute error": 2,
+            "Relative error (%)": 2.35294117647058,
+            "Runtime (s)": 3.0374019145965576,
             "Validated": true
         }
     },
@@ -1452,70 +1452,70 @@
             "Steiner tree cost": 151,
             "Absolute error": 7,
             "Relative error (%)": 4.861111111111116,
-            "Runtime (s)": 0.7057614326477051,
+            "Runtime (s)": 0.6111018657684326,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.6971597671508789,
+            "Runtime (s)": 0.6422467231750488,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 151,
             "Absolute error": 7,
             "Relative error (%)": 4.861111111111116,
-            "Runtime (s)": 2.4213316440582275,
+            "Runtime (s)": 2.7466537952423096,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 2.0894525051116943,
+            "Runtime (s)": 2.502622127532959,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 2.3615550994873047,
+            "Runtime (s)": 2.7577619552612305,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 2.180694580078125,
+            "Runtime (s)": 2.5224881172180176,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 2.5902087688446045,
+            "Runtime (s)": 2.99666166305542,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 3.0708465576171875,
+            "Runtime (s)": 2.972808599472046,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 3.355752944946289,
+            "Runtime (s)": 3.0233724117279053,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 144,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 3.1118814945220947,
+            "Runtime (s)": 2.994399070739746,
             "Validated": true
         }
     },
@@ -1528,70 +1528,70 @@
             "Steiner tree cost": 66,
             "Absolute error": 11,
             "Relative error (%)": 19.999999999999996,
-            "Runtime (s)": 0.7725286483764648,
+            "Runtime (s)": 0.8362808227539062,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 60,
             "Absolute error": 5,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 0.9215226173400879,
+            "Runtime (s)": 0.8442990779876709,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 56,
             "Absolute error": 1,
             "Relative error (%)": 1.8181818181818077,
-            "Runtime (s)": 2.9050838947296143,
+            "Runtime (s)": 2.6618218421936035,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 55,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 2.8796474933624268,
+            "Runtime (s)": 2.647270679473877,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 56,
             "Absolute error": 1,
             "Relative error (%)": 1.8181818181818077,
-            "Runtime (s)": 2.661473035812378,
+            "Runtime (s)": 2.712190866470337,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 55,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 2.5471272468566895,
+            "Runtime (s)": 2.6570661067962646,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 62,
-            "Absolute error": 7,
-            "Relative error (%)": 12.72727272727272,
-            "Runtime (s)": 4.051398277282715,
+            "Steiner tree cost": 56,
+            "Absolute error": 1,
+            "Relative error (%)": 1.8181818181818077,
+            "Runtime (s)": 3.6404869556427,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 62,
-            "Absolute error": 7,
-            "Relative error (%)": 12.72727272727272,
-            "Runtime (s)": 3.657278537750244,
+            "Steiner tree cost": 55,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 3.585292339324951,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 62,
-            "Absolute error": 7,
-            "Relative error (%)": 12.72727272727272,
-            "Runtime (s)": 3.470108985900879,
+            "Steiner tree cost": 56,
+            "Absolute error": 1,
+            "Relative error (%)": 1.8181818181818077,
+            "Runtime (s)": 3.5959088802337646,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
-            "Steiner tree cost": 62,
-            "Absolute error": 7,
-            "Relative error (%)": 12.72727272727272,
-            "Runtime (s)": 4.036360025405884,
+            "Steiner tree cost": 55,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 3.5906407833099365,
             "Validated": true
         }
     },
@@ -1604,70 +1604,70 @@
             "Steiner tree cost": 123,
             "Absolute error": 21,
             "Relative error (%)": 20.58823529411764,
-            "Runtime (s)": 0.8601324558258057,
+            "Runtime (s)": 0.7660033702850342,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 115,
             "Absolute error": 13,
             "Relative error (%)": 12.745098039215685,
-            "Runtime (s)": 0.7699923515319824,
+            "Runtime (s)": 0.7891230583190918,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 112,
             "Absolute error": 10,
             "Relative error (%)": 9.80392156862746,
-            "Runtime (s)": 2.4948039054870605,
+            "Runtime (s)": 2.9633705615997314,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 8,
             "Relative error (%)": 7.843137254901955,
-            "Runtime (s)": 2.586890697479248,
+            "Runtime (s)": 3.098928928375244,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 107,
             "Absolute error": 5,
             "Relative error (%)": 4.90196078431373,
-            "Runtime (s)": 2.536442518234253,
+            "Runtime (s)": 3.0305304527282715,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 107,
             "Absolute error": 5,
             "Relative error (%)": 4.90196078431373,
-            "Runtime (s)": 2.5363330841064453,
+            "Runtime (s)": 3.0460493564605713,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 112,
             "Absolute error": 10,
             "Relative error (%)": 9.80392156862746,
-            "Runtime (s)": 3.0763394832611084,
+            "Runtime (s)": 3.5923612117767334,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 8,
             "Relative error (%)": 7.843137254901955,
-            "Runtime (s)": 3.0970752239227295,
+            "Runtime (s)": 3.586406946182251,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 107,
             "Absolute error": 5,
             "Relative error (%)": 4.90196078431373,
-            "Runtime (s)": 3.0695366859436035,
+            "Runtime (s)": 3.4909844398498535,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 107,
             "Absolute error": 5,
             "Relative error (%)": 4.90196078431373,
-            "Runtime (s)": 3.0897951126098633,
+            "Runtime (s)": 3.5945656299591064,
             "Validated": true
         }
     },
@@ -1680,70 +1680,70 @@
             "Steiner tree cost": 39,
             "Absolute error": 7,
             "Relative error (%)": 21.875,
-            "Runtime (s)": 1.0736358165740967,
+            "Runtime (s)": 1.3257122039794922,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 37,
             "Absolute error": 5,
             "Relative error (%)": 15.625,
-            "Runtime (s)": 1.085263729095459,
+            "Runtime (s)": 1.3488008975982666,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 34,
             "Absolute error": 2,
             "Relative error (%)": 6.25,
-            "Runtime (s)": 3.496161699295044,
+            "Runtime (s)": 4.149996519088745,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 33,
             "Absolute error": 1,
             "Relative error (%)": 3.125,
-            "Runtime (s)": 3.551236629486084,
+            "Runtime (s)": 4.191680669784546,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 34,
             "Absolute error": 2,
             "Relative error (%)": 6.25,
-            "Runtime (s)": 3.503164052963257,
+            "Runtime (s)": 4.1844258308410645,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 33,
             "Absolute error": 1,
             "Relative error (%)": 3.125,
-            "Runtime (s)": 4.089020252227783,
+            "Runtime (s)": 4.049967050552368,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 34,
             "Absolute error": 2,
             "Relative error (%)": 6.25,
-            "Runtime (s)": 5.745032548904419,
+            "Runtime (s)": 5.559599161148071,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 33,
             "Absolute error": 1,
             "Relative error (%)": 3.125,
-            "Runtime (s)": 5.981150388717651,
+            "Runtime (s)": 5.846440315246582,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 34,
             "Absolute error": 2,
             "Relative error (%)": 6.25,
-            "Runtime (s)": 5.463104963302612,
+            "Runtime (s)": 5.68983793258667,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 33,
             "Absolute error": 1,
             "Relative error (%)": 3.125,
-            "Runtime (s)": 5.61884069442749,
+            "Runtime (s)": 5.671449422836304,
             "Validated": true
         }
     },
@@ -1756,70 +1756,70 @@
             "Steiner tree cost": 55,
             "Absolute error": 9,
             "Relative error (%)": 19.565217391304344,
-            "Runtime (s)": 1.0966637134552002,
+            "Runtime (s)": 1.154853105545044,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 49,
             "Absolute error": 3,
             "Relative error (%)": 6.521739130434789,
-            "Runtime (s)": 1.2848477363586426,
+            "Runtime (s)": 1.1800706386566162,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 52,
             "Absolute error": 6,
             "Relative error (%)": 13.043478260869556,
-            "Runtime (s)": 5.233383655548096,
+            "Runtime (s)": 4.01778769493103,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 48,
             "Absolute error": 2,
             "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 3.905155658721924,
+            "Runtime (s)": 4.373083829879761,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 48,
             "Absolute error": 2,
             "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 4.943151950836182,
+            "Runtime (s)": 4.569286346435547,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 47,
             "Absolute error": 1,
             "Relative error (%)": 2.1739130434782705,
-            "Runtime (s)": 4.239582300186157,
+            "Runtime (s)": 4.620775461196899,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 51,
-            "Absolute error": 5,
-            "Relative error (%)": 10.869565217391308,
-            "Runtime (s)": 6.591248989105225,
+            "Steiner tree cost": 52,
+            "Absolute error": 6,
+            "Relative error (%)": 13.043478260869556,
+            "Runtime (s)": 5.20842432975769,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 48,
             "Absolute error": 2,
             "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 4.798534154891968,
+            "Runtime (s)": 5.206676483154297,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 48,
-            "Absolute error": 2,
-            "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 4.726921319961548,
+            "Steiner tree cost": 49,
+            "Absolute error": 3,
+            "Relative error (%)": 6.521739130434789,
+            "Runtime (s)": 5.46805477142334,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 47,
             "Absolute error": 1,
             "Relative error (%)": 2.1739130434782705,
-            "Runtime (s)": 5.901081323623657,
+            "Runtime (s)": 5.779690742492676,
             "Validated": true
         }
     },
@@ -1832,70 +1832,70 @@
             "Steiner tree cost": 13,
             "Absolute error": 2,
             "Relative error (%)": 18.181818181818187,
-            "Runtime (s)": 5.240143537521362,
+            "Runtime (s)": 4.613981008529663,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 4.1134092807769775,
+            "Runtime (s)": 4.523149013519287,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 14.477089881896973,
+            "Runtime (s)": 13.79350471496582,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 11.464608192443848,
+            "Runtime (s)": 13.112941265106201,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 14.066490411758423,
+            "Runtime (s)": 13.92348575592041,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 12.197641849517822,
+            "Runtime (s)": 12.54721188545227,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 17.79667091369629,
+            "Runtime (s)": 16.69506072998047,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 16.4760320186615,
+            "Runtime (s)": 16.738518476486206,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 16.514022827148438,
+            "Runtime (s)": 16.847410440444946,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 12,
             "Absolute error": 1,
             "Relative error (%)": 9.090909090909083,
-            "Runtime (s)": 17.13929772377014,
+            "Runtime (s)": 16.672871589660645,
             "Validated": true
         }
     },
@@ -1908,70 +1908,70 @@
             "Steiner tree cost": 20,
             "Absolute error": 2,
             "Relative error (%)": 11.111111111111116,
-            "Runtime (s)": 5.865839958190918,
+            "Runtime (s)": 4.057724714279175,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 20,
             "Absolute error": 2,
             "Relative error (%)": 11.111111111111116,
-            "Runtime (s)": 4.504048824310303,
+            "Runtime (s)": 4.084078550338745,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 20,
             "Absolute error": 2,
             "Relative error (%)": 11.111111111111116,
-            "Runtime (s)": 16.425812005996704,
+            "Runtime (s)": 12.854139566421509,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 18,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 13.073102712631226,
+            "Runtime (s)": 12.74489140510559,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 20,
             "Absolute error": 2,
             "Relative error (%)": 11.111111111111116,
-            "Runtime (s)": 11.965439319610596,
+            "Runtime (s)": 13.041839361190796,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 18,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 11.240761041641235,
+            "Runtime (s)": 12.799697160720825,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 18,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 14.781491994857788,
+            "Runtime (s)": 16.651464700698853,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 18,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 18.120001792907715,
+            "Runtime (s)": 16.66075110435486,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 18,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 14.762323141098022,
+            "Runtime (s)": 16.849501848220825,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 18,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 14.745417833328247,
+            "Runtime (s)": 17.549234867095947,
             "Validated": true
         }
     },
@@ -1984,70 +1984,70 @@
             "Steiner tree cost": 124,
             "Absolute error": 18,
             "Relative error (%)": 16.981132075471695,
-            "Runtime (s)": 2.8087518215179443,
+            "Runtime (s)": 3.0773003101348877,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 107,
             "Absolute error": 1,
             "Relative error (%)": 0.9433962264151052,
-            "Runtime (s)": 2.71891188621521,
+            "Runtime (s)": 3.0188252925872803,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 114,
             "Absolute error": 8,
             "Relative error (%)": 7.547169811320753,
-            "Runtime (s)": 8.940098762512207,
+            "Runtime (s)": 10.28216290473938,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 4,
             "Relative error (%)": 3.7735849056603765,
-            "Runtime (s)": 9.008602380752563,
+            "Runtime (s)": 10.228959083557129,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 106,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 9.037948608398438,
+            "Runtime (s)": 10.380141258239746,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 4,
             "Relative error (%)": 3.7735849056603765,
-            "Runtime (s)": 9.313082456588745,
+            "Runtime (s)": 10.17913818359375,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 114,
             "Absolute error": 8,
             "Relative error (%)": 7.547169811320753,
-            "Runtime (s)": 15.662797689437866,
+            "Runtime (s)": 13.747170448303223,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 4,
             "Relative error (%)": 3.7735849056603765,
-            "Runtime (s)": 13.461102485656738,
+            "Runtime (s)": 13.626389026641846,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 106,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 12.78372573852539,
+            "Runtime (s)": 14.277312278747559,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 4,
             "Relative error (%)": 3.7735849056603765,
-            "Runtime (s)": 12.706496238708496,
+            "Runtime (s)": 14.413365602493286,
             "Validated": true
         }
     },
@@ -2060,70 +2060,70 @@
             "Steiner tree cost": 280,
             "Absolute error": 60,
             "Relative error (%)": 27.27272727272727,
-            "Runtime (s)": 2.778393030166626,
+            "Runtime (s)": 3.086188554763794,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 237,
             "Absolute error": 17,
             "Relative error (%)": 7.727272727272738,
-            "Runtime (s)": 2.6762161254882812,
+            "Runtime (s)": 3.025207042694092,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 260,
             "Absolute error": 40,
             "Relative error (%)": 18.181818181818187,
-            "Runtime (s)": 11.315330743789673,
+            "Runtime (s)": 10.774266004562378,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 236,
             "Absolute error": 16,
             "Relative error (%)": 7.272727272727275,
-            "Runtime (s)": 9.780550956726074,
+            "Runtime (s)": 10.645907640457153,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 229,
             "Absolute error": 9,
             "Relative error (%)": 4.090909090909101,
-            "Runtime (s)": 10.209465026855469,
+            "Runtime (s)": 10.719188213348389,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 233,
             "Absolute error": 13,
             "Relative error (%)": 5.909090909090908,
-            "Runtime (s)": 9.771830558776855,
+            "Runtime (s)": 11.40208888053894,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 263,
-            "Absolute error": 43,
-            "Relative error (%)": 19.545454545454554,
-            "Runtime (s)": 14.391021013259888,
+            "Steiner tree cost": 249,
+            "Absolute error": 29,
+            "Relative error (%)": 13.181818181818183,
+            "Runtime (s)": 15.16281008720398,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 236,
             "Absolute error": 16,
             "Relative error (%)": 7.272727272727275,
-            "Runtime (s)": 16.285005807876587,
+            "Runtime (s)": 13.83760142326355,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 252,
-            "Absolute error": 32,
-            "Relative error (%)": 14.54545454545455,
-            "Runtime (s)": 15.85409164428711,
+            "Steiner tree cost": 229,
+            "Absolute error": 9,
+            "Relative error (%)": 4.090909090909101,
+            "Runtime (s)": 13.423161029815674,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 233,
             "Absolute error": 13,
             "Relative error (%)": 5.909090909090908,
-            "Runtime (s)": 13.783947706222534,
+            "Runtime (s)": 13.82579493522644,
             "Validated": true
         }
     },
@@ -2136,70 +2136,70 @@
             "Steiner tree cost": 85,
             "Absolute error": 18,
             "Relative error (%)": 26.865671641791057,
-            "Runtime (s)": 3.4365997314453125,
+            "Runtime (s)": 3.593364715576172,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 73,
             "Absolute error": 6,
             "Relative error (%)": 8.955223880597018,
-            "Runtime (s)": 3.437169313430786,
+            "Runtime (s)": 3.6240174770355225,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 73,
             "Absolute error": 6,
             "Relative error (%)": 8.955223880597018,
-            "Runtime (s)": 12.742608785629272,
+            "Runtime (s)": 11.726931810379028,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 69,
             "Absolute error": 2,
             "Relative error (%)": 2.9850746268656803,
-            "Runtime (s)": 13.512219429016113,
+            "Runtime (s)": 12.374853610992432,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 72,
             "Absolute error": 5,
             "Relative error (%)": 7.462686567164178,
-            "Runtime (s)": 12.419478416442871,
+            "Runtime (s)": 12.519545078277588,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 68,
             "Absolute error": 1,
             "Relative error (%)": 1.4925373134328401,
-            "Runtime (s)": 12.958666563034058,
+            "Runtime (s)": 12.698639392852783,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 73,
             "Absolute error": 6,
             "Relative error (%)": 8.955223880597018,
-            "Runtime (s)": 16.128881216049194,
+            "Runtime (s)": 16.433300733566284,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 69,
             "Absolute error": 2,
             "Relative error (%)": 2.9850746268656803,
-            "Runtime (s)": 17.517993688583374,
+            "Runtime (s)": 16.396713256835938,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 72,
-            "Absolute error": 5,
-            "Relative error (%)": 7.462686567164178,
-            "Runtime (s)": 17.787161350250244,
+            "Steiner tree cost": 70,
+            "Absolute error": 3,
+            "Relative error (%)": 4.477611940298498,
+            "Runtime (s)": 17.343659162521362,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 68,
             "Absolute error": 1,
             "Relative error (%)": 1.4925373134328401,
-            "Runtime (s)": 17.37883758544922,
+            "Runtime (s)": 17.300849676132202,
             "Validated": true
         }
     },
@@ -2212,70 +2212,70 @@
             "Steiner tree cost": 126,
             "Absolute error": 23,
             "Relative error (%)": 22.330097087378633,
-            "Runtime (s)": 3.8157169818878174,
+            "Runtime (s)": 3.9479522705078125,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 116,
             "Absolute error": 13,
             "Relative error (%)": 12.621359223300965,
-            "Runtime (s)": 4.397568225860596,
+            "Runtime (s)": 3.997159957885742,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 119,
             "Absolute error": 16,
             "Relative error (%)": 15.533980582524265,
-            "Runtime (s)": 12.741212129592896,
+            "Runtime (s)": 12.113213062286377,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 110,
             "Absolute error": 7,
             "Relative error (%)": 6.796116504854366,
-            "Runtime (s)": 12.112985134124756,
+            "Runtime (s)": 12.36735463142395,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 105,
             "Absolute error": 2,
             "Relative error (%)": 1.9417475728155331,
-            "Runtime (s)": 12.112730503082275,
+            "Runtime (s)": 12.228729486465454,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 105,
             "Absolute error": 2,
             "Relative error (%)": 1.9417475728155331,
-            "Runtime (s)": 12.120083808898926,
+            "Runtime (s)": 12.194955587387085,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 121,
-            "Absolute error": 18,
-            "Relative error (%)": 17.475728155339798,
-            "Runtime (s)": 15.939984560012817,
+            "Steiner tree cost": 114,
+            "Absolute error": 11,
+            "Relative error (%)": 10.679611650485432,
+            "Runtime (s)": 16.173099279403687,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 111,
-            "Absolute error": 8,
-            "Relative error (%)": 7.7669902912621325,
-            "Runtime (s)": 17.683439016342163,
+            "Steiner tree cost": 110,
+            "Absolute error": 7,
+            "Relative error (%)": 6.796116504854366,
+            "Runtime (s)": 15.890544652938843,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 116,
-            "Absolute error": 13,
-            "Relative error (%)": 12.621359223300965,
-            "Runtime (s)": 17.699357271194458,
+            "Steiner tree cost": 105,
+            "Absolute error": 2,
+            "Relative error (%)": 1.9417475728155331,
+            "Runtime (s)": 16.212138652801514,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
-            "Steiner tree cost": 103,
-            "Absolute error": 0,
-            "Relative error (%)": 0.0,
-            "Runtime (s)": 17.068885326385498,
+            "Steiner tree cost": 105,
+            "Absolute error": 2,
+            "Relative error (%)": 1.9417475728155331,
+            "Runtime (s)": 16.521179914474487,
             "Validated": true
         }
     },
@@ -2288,70 +2288,70 @@
             "Steiner tree cost": 32,
             "Absolute error": 3,
             "Relative error (%)": 10.344827586206895,
-            "Runtime (s)": 6.950484037399292,
+            "Runtime (s)": 5.83394980430603,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 32,
             "Absolute error": 3,
             "Relative error (%)": 10.344827586206895,
-            "Runtime (s)": 4.895731210708618,
+            "Runtime (s)": 5.845171689987183,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 32,
             "Absolute error": 3,
             "Relative error (%)": 10.344827586206895,
-            "Runtime (s)": 17.998254537582397,
+            "Runtime (s)": 19.202505111694336,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 31,
             "Absolute error": 2,
             "Relative error (%)": 6.896551724137923,
-            "Runtime (s)": 16.566962242126465,
+            "Runtime (s)": 18.4119610786438,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 32,
             "Absolute error": 3,
             "Relative error (%)": 10.344827586206895,
-            "Runtime (s)": 17.30099844932556,
+            "Runtime (s)": 19.310048818588257,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 30,
             "Absolute error": 1,
             "Relative error (%)": 3.4482758620689724,
-            "Runtime (s)": 16.818284511566162,
+            "Runtime (s)": 18.245332717895508,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 31,
             "Absolute error": 2,
             "Relative error (%)": 6.896551724137923,
-            "Runtime (s)": 24.10893201828003,
+            "Runtime (s)": 23.932697057724,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 31,
             "Absolute error": 2,
             "Relative error (%)": 6.896551724137923,
-            "Runtime (s)": 25.1143217086792,
+            "Runtime (s)": 24.491315603256226,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 30,
             "Absolute error": 1,
             "Relative error (%)": 3.4482758620689724,
-            "Runtime (s)": 26.217322826385498,
+            "Runtime (s)": 25.139771223068237,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 30,
             "Absolute error": 1,
             "Relative error (%)": 3.4482758620689724,
-            "Runtime (s)": 24.908273458480835,
+            "Runtime (s)": 25.141681671142578,
             "Validated": true
         }
     },
@@ -2364,70 +2364,70 @@
             "Steiner tree cost": 47,
             "Absolute error": 5,
             "Relative error (%)": 11.904761904761907,
-            "Runtime (s)": 5.53866720199585,
+            "Runtime (s)": 6.12234091758728,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 44,
             "Absolute error": 2,
             "Relative error (%)": 4.761904761904767,
-            "Runtime (s)": 5.606220960617065,
+            "Runtime (s)": 5.56853175163269,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 43,
             "Absolute error": 1,
             "Relative error (%)": 2.3809523809523725,
-            "Runtime (s)": 20.624165296554565,
+            "Runtime (s)": 18.661736011505127,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 42,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 16.693875312805176,
+            "Runtime (s)": 18.493613243103027,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 42,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 19.18511962890625,
+            "Runtime (s)": 18.57639169692993,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 42,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 18.922486782073975,
+            "Runtime (s)": 18.671777963638306,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 43,
-            "Absolute error": 1,
-            "Relative error (%)": 2.3809523809523725,
-            "Runtime (s)": 22.878899812698364,
+            "Steiner tree cost": 42,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 25.80734610557556,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 43,
-            "Absolute error": 1,
-            "Relative error (%)": 2.3809523809523725,
-            "Runtime (s)": 21.72420859336853,
+            "Steiner tree cost": 42,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 26.576711177825928,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 42,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 26.035544633865356,
+            "Runtime (s)": 26.539995908737183,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 42,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 23.948240518569946,
+            "Runtime (s)": 26.706631660461426,
             "Validated": true
         }
     },
@@ -2440,70 +2440,70 @@
             "Steiner tree cost": 16,
             "Absolute error": 3,
             "Relative error (%)": 23.076923076923084,
-            "Runtime (s)": 18.311680555343628,
+            "Runtime (s)": 22.034183263778687,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 16,
             "Absolute error": 3,
             "Relative error (%)": 23.076923076923084,
-            "Runtime (s)": 18.888859033584595,
+            "Runtime (s)": 20.962040424346924,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 15,
             "Absolute error": 2,
             "Relative error (%)": 15.384615384615374,
-            "Runtime (s)": 56.62756824493408,
+            "Runtime (s)": 64.36598181724548,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 14,
             "Absolute error": 1,
             "Relative error (%)": 7.692307692307687,
-            "Runtime (s)": 59.55534911155701,
+            "Runtime (s)": 64.30714678764343,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 15,
             "Absolute error": 2,
             "Relative error (%)": 15.384615384615374,
-            "Runtime (s)": 58.8289692401886,
+            "Runtime (s)": 65.15619373321533,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 14,
             "Absolute error": 1,
             "Relative error (%)": 7.692307692307687,
-            "Runtime (s)": 62.257505893707275,
+            "Runtime (s)": 64.78424429893494,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 15,
             "Absolute error": 2,
             "Relative error (%)": 15.384615384615374,
-            "Runtime (s)": 85.43304443359375,
+            "Runtime (s)": 87.67959237098694,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 14,
             "Absolute error": 1,
             "Relative error (%)": 7.692307692307687,
-            "Runtime (s)": 84.45279121398926,
+            "Runtime (s)": 88.82681775093079,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 15,
             "Absolute error": 2,
             "Relative error (%)": 15.384615384615374,
-            "Runtime (s)": 79.1653561592102,
+            "Runtime (s)": 86.25480222702026,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 14,
             "Absolute error": 1,
             "Relative error (%)": 7.692307692307687,
-            "Runtime (s)": 75.69752645492554,
+            "Runtime (s)": 87.08461594581604,
             "Validated": true
         }
     },
@@ -2516,70 +2516,70 @@
             "Steiner tree cost": 27,
             "Absolute error": 4,
             "Relative error (%)": 17.391304347826097,
-            "Runtime (s)": 19.398128747940063,
+            "Runtime (s)": 22.45064377784729,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 26,
             "Absolute error": 3,
             "Relative error (%)": 13.043478260869556,
-            "Runtime (s)": 19.33424997329712,
+            "Runtime (s)": 21.76309847831726,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 25,
             "Absolute error": 2,
             "Relative error (%)": 8.695652173913038,
-            "Runtime (s)": 64.80604648590088,
+            "Runtime (s)": 67.19440340995789,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 24,
             "Absolute error": 1,
             "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 58.99228835105896,
+            "Runtime (s)": 65.94832015037537,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 23,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 63.69335126876831,
+            "Runtime (s)": 67.91432976722717,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 24,
             "Absolute error": 1,
             "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 58.86372756958008,
+            "Runtime (s)": 65.07509541511536,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 26,
-            "Absolute error": 3,
-            "Relative error (%)": 13.043478260869556,
-            "Runtime (s)": 80.17025637626648,
+            "Steiner tree cost": 24,
+            "Absolute error": 1,
+            "Relative error (%)": 4.347826086956519,
+            "Runtime (s)": 87.27647805213928,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 26,
-            "Absolute error": 3,
-            "Relative error (%)": 13.043478260869556,
-            "Runtime (s)": 91.66162276268005,
+            "Steiner tree cost": 24,
+            "Absolute error": 1,
+            "Relative error (%)": 4.347826086956519,
+            "Runtime (s)": 88.12367081642151,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 24,
             "Absolute error": 1,
             "Relative error (%)": 4.347826086956519,
-            "Runtime (s)": 85.280597448349,
+            "Runtime (s)": 87.8595838546753,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
-            "Steiner tree cost": 25,
-            "Absolute error": 2,
-            "Relative error (%)": 8.695652173913038,
-            "Runtime (s)": 79.53956890106201,
+            "Steiner tree cost": 24,
+            "Absolute error": 1,
+            "Relative error (%)": 4.347826086956519,
+            "Runtime (s)": 90.07580423355103,
             "Validated": true
         }
     },
@@ -2592,70 +2592,70 @@
             "Steiner tree cost": 140,
             "Absolute error": 29,
             "Relative error (%)": 26.126126126126124,
-            "Runtime (s)": 22.661144733428955,
+            "Runtime (s)": 25.06806182861328,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 125,
             "Absolute error": 14,
             "Relative error (%)": 12.612612612612617,
-            "Runtime (s)": 21.736656665802002,
+            "Runtime (s)": 25.229130744934082,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 120,
             "Absolute error": 9,
             "Relative error (%)": 8.108108108108114,
-            "Runtime (s)": 73.98131442070007,
+            "Runtime (s)": 80.37287473678589,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 115,
             "Absolute error": 4,
             "Relative error (%)": 3.603603603603611,
-            "Runtime (s)": 79.08092141151428,
+            "Runtime (s)": 81.66819214820862,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 118,
             "Absolute error": 7,
             "Relative error (%)": 6.3063063063063085,
-            "Runtime (s)": 76.29311108589172,
+            "Runtime (s)": 79.63888955116272,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 113,
             "Absolute error": 2,
             "Relative error (%)": 1.8018018018018056,
-            "Runtime (s)": 73.21020317077637,
+            "Runtime (s)": 81.64218854904175,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 120,
             "Absolute error": 9,
             "Relative error (%)": 8.108108108108114,
-            "Runtime (s)": 102.52549242973328,
+            "Runtime (s)": 116.54437303543091,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 115,
             "Absolute error": 4,
             "Relative error (%)": 3.603603603603611,
-            "Runtime (s)": 101.60639429092407,
+            "Runtime (s)": 113.9286994934082,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 118,
             "Absolute error": 7,
             "Relative error (%)": 6.3063063063063085,
-            "Runtime (s)": 103.02398490905762,
+            "Runtime (s)": 109.03462624549866,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 113,
             "Absolute error": 2,
             "Relative error (%)": 1.8018018018018056,
-            "Runtime (s)": 98.29817914962769,
+            "Runtime (s)": 114.34252667427063,
             "Validated": true
         }
     },
@@ -2668,70 +2668,70 @@
             "Steiner tree cost": 278,
             "Absolute error": 64,
             "Relative error (%)": 29.90654205607477,
-            "Runtime (s)": 22.45586919784546,
+            "Runtime (s)": 22.742736101150513,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 255,
             "Absolute error": 41,
             "Relative error (%)": 19.158878504672906,
-            "Runtime (s)": 19.74990439414978,
+            "Runtime (s)": 24.437156200408936,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 252,
             "Absolute error": 38,
             "Relative error (%)": 17.757009345794383,
-            "Runtime (s)": 70.86077570915222,
+            "Runtime (s)": 82.7782998085022,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 233,
             "Absolute error": 19,
             "Relative error (%)": 8.878504672897192,
-            "Runtime (s)": 70.20423483848572,
+            "Runtime (s)": 83.185720205307,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 240,
             "Absolute error": 26,
             "Relative error (%)": 12.149532710280365,
-            "Runtime (s)": 73.0192301273346,
+            "Runtime (s)": 80.82524061203003,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 227,
             "Absolute error": 13,
             "Relative error (%)": 6.074766355140193,
-            "Runtime (s)": 74.84081935882568,
+            "Runtime (s)": 78.61213397979736,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 248,
             "Absolute error": 34,
             "Relative error (%)": 15.88785046728971,
-            "Runtime (s)": 108.67300581932068,
+            "Runtime (s)": 113.89149618148804,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 233,
             "Absolute error": 19,
             "Relative error (%)": 8.878504672897192,
-            "Runtime (s)": 107.28114295005798,
+            "Runtime (s)": 110.71821141242981,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 238,
             "Absolute error": 24,
             "Relative error (%)": 11.214953271028039,
-            "Runtime (s)": 107.22676229476929,
+            "Runtime (s)": 111.74953889846802,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 227,
             "Absolute error": 13,
             "Relative error (%)": 6.074766355140193,
-            "Runtime (s)": 105.12826991081238,
+            "Runtime (s)": 108.3394045829773,
             "Validated": true
         }
     },
@@ -2744,70 +2744,70 @@
             "Steiner tree cost": 91,
             "Absolute error": 18,
             "Relative error (%)": 24.657534246575352,
-            "Runtime (s)": 27.56484889984131,
+            "Runtime (s)": 29.917737007141113,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 86,
             "Absolute error": 13,
             "Relative error (%)": 17.808219178082197,
-            "Runtime (s)": 26.300028800964355,
+            "Runtime (s)": 30.304232120513916,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 80,
             "Absolute error": 7,
             "Relative error (%)": 9.589041095890405,
-            "Runtime (s)": 84.41523909568787,
+            "Runtime (s)": 95.4610185623169,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 76,
             "Absolute error": 3,
             "Relative error (%)": 4.109589041095885,
-            "Runtime (s)": 83.8452320098877,
+            "Runtime (s)": 89.55442547798157,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 80,
             "Absolute error": 7,
             "Relative error (%)": 9.589041095890405,
-            "Runtime (s)": 83.23182463645935,
+            "Runtime (s)": 96.54307579994202,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 76,
             "Absolute error": 3,
             "Relative error (%)": 4.109589041095885,
-            "Runtime (s)": 88.67626619338989,
+            "Runtime (s)": 95.9214699268341,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 80,
             "Absolute error": 7,
             "Relative error (%)": 9.589041095890405,
-            "Runtime (s)": 122.73345923423767,
+            "Runtime (s)": 127.43389439582825,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 76,
             "Absolute error": 3,
             "Relative error (%)": 4.109589041095885,
-            "Runtime (s)": 116.7865719795227,
+            "Runtime (s)": 131.17558908462524,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 80,
             "Absolute error": 7,
             "Relative error (%)": 9.589041095890405,
-            "Runtime (s)": 117.05542778968811,
+            "Runtime (s)": 134.25452589988708,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 76,
             "Absolute error": 3,
             "Relative error (%)": 4.109589041095885,
-            "Runtime (s)": 114.88981652259827,
+            "Runtime (s)": 130.35474181175232,
             "Validated": true
         }
     },
@@ -2820,70 +2820,70 @@
             "Steiner tree cost": 193,
             "Absolute error": 48,
             "Relative error (%)": 33.10344827586207,
-            "Runtime (s)": 24.077194213867188,
+            "Runtime (s)": 28.18585991859436,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 169,
             "Absolute error": 24,
             "Relative error (%)": 16.551724137931046,
-            "Runtime (s)": 27.143113136291504,
+            "Runtime (s)": 28.923660039901733,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 174,
             "Absolute error": 29,
             "Relative error (%)": 19.999999999999996,
-            "Runtime (s)": 87.46400475502014,
+            "Runtime (s)": 92.89227533340454,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 160,
             "Absolute error": 15,
             "Relative error (%)": 10.344827586206895,
-            "Runtime (s)": 90.70965552330017,
+            "Runtime (s)": 95.24128675460815,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 150,
             "Absolute error": 5,
             "Relative error (%)": 3.4482758620689724,
-            "Runtime (s)": 89.56837058067322,
+            "Runtime (s)": 95.08789277076721,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 147,
             "Absolute error": 2,
             "Relative error (%)": 1.379310344827589,
-            "Runtime (s)": 86.25213837623596,
+            "Runtime (s)": 88.39739727973938,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
-            "Steiner tree cost": 170,
-            "Absolute error": 25,
-            "Relative error (%)": 17.24137931034482,
-            "Runtime (s)": 118.62157440185547,
+            "Steiner tree cost": 163,
+            "Absolute error": 18,
+            "Relative error (%)": 12.413793103448278,
+            "Runtime (s)": 121.30375337600708,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 157,
-            "Absolute error": 12,
-            "Relative error (%)": 8.275862068965512,
-            "Runtime (s)": 121.20992279052734,
+            "Steiner tree cost": 160,
+            "Absolute error": 15,
+            "Relative error (%)": 10.344827586206895,
+            "Runtime (s)": 123.41174674034119,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 149,
-            "Absolute error": 4,
-            "Relative error (%)": 2.758620689655178,
-            "Runtime (s)": 122.4071455001831,
+            "Steiner tree cost": 146,
+            "Absolute error": 1,
+            "Relative error (%)": 0.6896551724137945,
+            "Runtime (s)": 137.0222828388214,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 147,
             "Absolute error": 2,
             "Relative error (%)": 1.379310344827589,
-            "Runtime (s)": 121.6023759841919,
+            "Runtime (s)": 134.5463650226593,
             "Validated": true
         }
     },
@@ -2896,70 +2896,70 @@
             "Steiner tree cost": 40,
             "Absolute error": 6,
             "Relative error (%)": 17.647058823529417,
-            "Runtime (s)": 45.07330107688904,
+            "Runtime (s)": 47.16091847419739,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 39,
             "Absolute error": 5,
             "Relative error (%)": 14.705882352941169,
-            "Runtime (s)": 45.5431592464447,
+            "Runtime (s)": 45.83769607543945,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 38,
             "Absolute error": 4,
             "Relative error (%)": 11.764705882352944,
-            "Runtime (s)": 145.71163511276245,
+            "Runtime (s)": 147.12700986862183,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 37,
             "Absolute error": 3,
             "Relative error (%)": 8.823529411764696,
-            "Runtime (s)": 143.2611255645752,
+            "Runtime (s)": 141.76513838768005,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 37,
             "Absolute error": 3,
             "Relative error (%)": 8.823529411764696,
-            "Runtime (s)": 145.25659346580505,
+            "Runtime (s)": 139.172260761261,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 37,
             "Absolute error": 3,
             "Relative error (%)": 8.823529411764696,
-            "Runtime (s)": 139.17599892616272,
+            "Runtime (s)": 142.81922912597656,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 38,
             "Absolute error": 4,
             "Relative error (%)": 11.764705882352944,
-            "Runtime (s)": 201.9457278251648,
+            "Runtime (s)": 192.71138834953308,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 38,
-            "Absolute error": 4,
-            "Relative error (%)": 11.764705882352944,
-            "Runtime (s)": 199.10595679283142,
+            "Steiner tree cost": 37,
+            "Absolute error": 3,
+            "Relative error (%)": 8.823529411764696,
+            "Runtime (s)": 200.37734603881836,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 37,
             "Absolute error": 3,
             "Relative error (%)": 8.823529411764696,
-            "Runtime (s)": 193.3242871761322,
+            "Runtime (s)": 195.41863107681274,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 37,
             "Absolute error": 3,
             "Relative error (%)": 8.823529411764696,
-            "Runtime (s)": 193.75028276443481,
+            "Runtime (s)": 208.23813199996948,
             "Validated": true
         }
     },
@@ -2972,70 +2972,70 @@
             "Steiner tree cost": 76,
             "Absolute error": 9,
             "Relative error (%)": 13.432835820895516,
-            "Runtime (s)": 46.55181360244751,
+            "Runtime (s)": 48.89669442176819,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 69,
             "Absolute error": 2,
             "Relative error (%)": 2.9850746268656803,
-            "Runtime (s)": 44.62104535102844,
+            "Runtime (s)": 47.23525309562683,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 73,
             "Absolute error": 6,
             "Relative error (%)": 8.955223880597018,
-            "Runtime (s)": 150.68085026741028,
+            "Runtime (s)": 146.75165796279907,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 70,
             "Absolute error": 3,
             "Relative error (%)": 4.477611940298498,
-            "Runtime (s)": 141.8186318874359,
+            "Runtime (s)": 156.27620148658752,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 71,
             "Absolute error": 4,
             "Relative error (%)": 5.970149253731338,
-            "Runtime (s)": 142.35735297203064,
+            "Runtime (s)": 153.2559471130371,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 70,
             "Absolute error": 3,
             "Relative error (%)": 4.477611940298498,
-            "Runtime (s)": 144.1941728591919,
+            "Runtime (s)": 153.80799984931946,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 73,
             "Absolute error": 6,
             "Relative error (%)": 8.955223880597018,
-            "Runtime (s)": 196.20407128334045,
+            "Runtime (s)": 214.38114404678345,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 71,
-            "Absolute error": 4,
-            "Relative error (%)": 5.970149253731338,
-            "Runtime (s)": 190.7182161808014,
+            "Steiner tree cost": 70,
+            "Absolute error": 3,
+            "Relative error (%)": 4.477611940298498,
+            "Runtime (s)": 217.8447072505951,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 72,
             "Absolute error": 5,
             "Relative error (%)": 7.462686567164178,
-            "Runtime (s)": 192.88951110839844,
+            "Runtime (s)": 214.51001358032227,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 70,
             "Absolute error": 3,
             "Relative error (%)": 4.477611940298498,
-            "Runtime (s)": 193.9456081390381,
+            "Runtime (s)": 211.10198998451233,
             "Validated": true
         }
     },
@@ -3048,70 +3048,70 @@
             "Steiner tree cost": 19,
             "Absolute error": 4,
             "Relative error (%)": 26.66666666666666,
-            "Runtime (s)": 172.34105968475342,
+            "Runtime (s)": 171.6829059123993,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 18,
             "Absolute error": 3,
             "Relative error (%)": 19.999999999999996,
-            "Runtime (s)": 169.1158802509308,
+            "Runtime (s)": 177.34981298446655,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 17,
             "Absolute error": 2,
             "Relative error (%)": 13.33333333333333,
-            "Runtime (s)": 526.9475479125977,
+            "Runtime (s)": 547.5281336307526,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 15,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 518.9659376144409,
+            "Runtime (s)": 545.3018515110016,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 16,
             "Absolute error": 1,
             "Relative error (%)": 6.666666666666665,
-            "Runtime (s)": 542.59707903862,
+            "Runtime (s)": 546.0082941055298,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 15,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 552.5986354351044,
+            "Runtime (s)": 562.8517706394196,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 17,
             "Absolute error": 2,
             "Relative error (%)": 13.33333333333333,
-            "Runtime (s)": 771.5670695304871,
+            "Runtime (s)": 709.5656065940857,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Steiner tree cost": 17,
-            "Absolute error": 2,
-            "Relative error (%)": 13.33333333333333,
-            "Runtime (s)": 790.2785251140594,
+            "Steiner tree cost": 15,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 682.7363469600677,
             "Validated": true
         },
         "Advanced 11/6 Full": {
-            "Steiner tree cost": 17,
-            "Absolute error": 2,
-            "Relative error (%)": 13.33333333333333,
-            "Runtime (s)": 748.7336225509644,
-            "Validated": true
-        },
-        "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 16,
             "Absolute error": 1,
             "Relative error (%)": 6.666666666666665,
-            "Runtime (s)": 702.1026334762573,
+            "Runtime (s)": 685.092925786972,
+            "Validated": true
+        },
+        "Advanced 11/6 Full w/ zeroing contraction": {
+            "Steiner tree cost": 15,
+            "Absolute error": 0,
+            "Relative error (%)": 0.0,
+            "Runtime (s)": 677.281329870224,
             "Validated": true
         }
     },
@@ -3124,70 +3124,70 @@
             "Steiner tree cost": 29,
             "Absolute error": 4,
             "Relative error (%)": 15.999999999999993,
-            "Runtime (s)": 168.18084335327148,
+            "Runtime (s)": 163.26390624046326,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 28,
             "Absolute error": 3,
             "Relative error (%)": 12.00000000000001,
-            "Runtime (s)": 176.3009910583496,
+            "Runtime (s)": 171.54840350151062,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 28,
             "Absolute error": 3,
             "Relative error (%)": 12.00000000000001,
-            "Runtime (s)": 538.2135241031647,
+            "Runtime (s)": 523.1432745456696,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 27,
             "Absolute error": 2,
             "Relative error (%)": 8.000000000000007,
-            "Runtime (s)": 514.9908647537231,
+            "Runtime (s)": 496.31930589675903,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 27,
             "Absolute error": 2,
             "Relative error (%)": 8.000000000000007,
-            "Runtime (s)": 548.0860841274261,
+            "Runtime (s)": 501.39290499687195,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 26,
             "Absolute error": 1,
             "Relative error (%)": 4.0000000000000036,
-            "Runtime (s)": 592.545360326767,
+            "Runtime (s)": 500.29993653297424,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 28,
             "Absolute error": 3,
             "Relative error (%)": 12.00000000000001,
-            "Runtime (s)": 800.7565002441406,
+            "Runtime (s)": 678.6655015945435,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 27,
             "Absolute error": 2,
             "Relative error (%)": 8.000000000000007,
-            "Runtime (s)": 779.4080300331116,
+            "Runtime (s)": 698.309892654419,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 27,
             "Absolute error": 2,
             "Relative error (%)": 8.000000000000007,
-            "Runtime (s)": 801.0993647575378,
+            "Runtime (s)": 679.8012523651123,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 26,
             "Absolute error": 1,
             "Relative error (%)": 4.0000000000000036,
-            "Runtime (s)": 761.1231470108032,
+            "Runtime (s)": 678.3040852546692,
             "Validated": true
         }
     },
@@ -3200,70 +3200,70 @@
             "Steiner tree cost": 23,
             "Absolute error": 7,
             "Relative error (%)": 43.75,
-            "Runtime (s)": 0.000453948974609375,
+            "Runtime (s)": 0.00036334991455078125,
             "Validated": true
         },
         "KMB Full": {
             "Steiner tree cost": 17,
             "Absolute error": 1,
             "Relative error (%)": 6.25,
-            "Runtime (s)": 0.0004584789276123047,
+            "Runtime (s)": 0.00041365623474121094,
             "Validated": true
         },
         "Simple 11/6 Basic": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0013325214385986328,
+            "Runtime (s)": 0.0013685226440429688,
             "Validated": true
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.001589059829711914,
+            "Runtime (s)": 0.0016047954559326172,
             "Validated": true
         },
         "Simple 11/6 Full": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0015769004821777344,
+            "Runtime (s)": 0.0013585090637207031,
             "Validated": true
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0016632080078125,
+            "Runtime (s)": 0.0017483234405517578,
             "Validated": true
         },
         "Advanced 11/6 Basic": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0010514259338378906,
+            "Runtime (s)": 0.0011620521545410156,
             "Validated": true
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0011920928955078125,
+            "Runtime (s)": 0.0012536048889160156,
             "Validated": true
         },
         "Advanced 11/6 Full": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0012116432189941406,
+            "Runtime (s)": 0.0012507438659667969,
             "Validated": true
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
             "Steiner tree cost": 16,
             "Absolute error": 0,
             "Relative error (%)": 0.0,
-            "Runtime (s)": 0.0013866424560546875,
+            "Runtime (s)": 0.0021851062774658203,
             "Validated": true
         }
     },
@@ -3273,80 +3273,80 @@
             "Relative error std deviation (%)": 8.775000122465237,
             "Relative error max (%)": 43.75,
             "Relative error min (%)": 1.449275362318847,
-            "Runtime average (s)": 14.152617526608845,
-            "Runtime std deviation (s)": 36.3537585988117
+            "Runtime average (s)": 14.450094888376634,
+            "Runtime std deviation (s)": 36.00812315459322
         },
         "KMB Full": {
             "Relative error average (%)": 7.726764449264157,
             "Relative error std deviation (%)": 6.282786276748239,
             "Relative error max (%)": 23.076923076923084,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 14.112855628479359,
-            "Runtime std deviation (s)": 36.83658713767171
+            "Runtime average (s)": 14.72038957684539,
+            "Runtime std deviation (s)": 37.3397681972891
         },
         "Simple 11/6 Basic": {
             "Relative error average (%)": 8.914989835103677,
             "Relative error std deviation (%)": 5.4312348164041175,
             "Relative error max (%)": 19.999999999999996,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 64.73313672598019,
-            "Runtime std deviation (s)": 126.08904459576046
+            "Runtime average (s)": 65.16128283323243,
+            "Runtime std deviation (s)": 126.27979838131562
         },
         "Simple 11/6 Basic w/ zeroing contraction": {
             "Relative error average (%)": 3.3414160358203255,
             "Relative error std deviation (%)": 3.2921813542369263,
             "Relative error max (%)": 10.344827586206895,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 112.07585486700368,
-            "Runtime std deviation (s)": 270.1115089877911
+            "Runtime average (s)": 117.39246708847756,
+            "Runtime std deviation (s)": 291.8476117757146
         },
         "Simple 11/6 Full": {
             "Relative error average (%)": 4.251047696070723,
             "Relative error std deviation (%)": 4.148598901279115,
             "Relative error max (%)": 15.384615384615374,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 64.61186426184898,
-            "Runtime std deviation (s)": 127.22642346358987
+            "Runtime average (s)": 66.0368966002797,
+            "Runtime std deviation (s)": 126.272637882205
         },
         "Simple 11/6 Full w/ zeroing contraction": {
             "Relative error average (%)": 2.180057575266065,
             "Relative error std deviation (%)": 2.478621780938009,
             "Relative error max (%)": 9.090909090909083,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 111.17617927041165,
-            "Runtime std deviation (s)": 262.1417802994791
+            "Runtime average (s)": 116.45260324589042,
+            "Runtime std deviation (s)": 285.85445329297016
         },
         "Advanced 11/6 Basic": {
-            "Relative error average (%)": 7.284074988311754,
-            "Relative error std deviation (%)": 5.399411911364989,
-            "Relative error max (%)": 19.545454545454554,
+            "Relative error average (%)": 6.510266640420068,
+            "Relative error std deviation (%)": 4.645007310101614,
+            "Relative error max (%)": 15.88785046728971,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 64.34456542480824,
-            "Runtime std deviation (s)": 167.45105122579855
+            "Runtime average (s)": 61.14947892344275,
+            "Runtime std deviation (s)": 149.57844320716427
         },
         "Advanced 11/6 Basic w/ zeroing contraction": {
-            "Relative error average (%)": 4.409335836006191,
-            "Relative error std deviation (%)": 4.023431148511034,
-            "Relative error max (%)": 13.33333333333333,
+            "Relative error average (%)": 3.3414160358203255,
+            "Relative error std deviation (%)": 3.2921813542369263,
+            "Relative error max (%)": 10.344827586206895,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 64.33090233802795,
-            "Runtime std deviation (s)": 166.9630747585877
+            "Runtime average (s)": 61.26841270091922,
+            "Runtime std deviation (s)": 149.1201754774759
         },
         "Advanced 11/6 Full": {
-            "Relative error average (%)": 4.47003012649403,
-            "Relative error std deviation (%)": 4.564490863724438,
+            "Relative error average (%)": 3.5463548415991752,
+            "Relative error std deviation (%)": 3.6181073134225405,
             "Relative error max (%)": 15.384615384615374,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 63.61392405975697,
-            "Runtime std deviation (s)": 164.97494944139885
+            "Runtime average (s)": 61.010486968727996,
+            "Runtime std deviation (s)": 147.45521669043166
         },
         "Advanced 11/6 Full w/ zeroing contraction": {
-            "Relative error average (%)": 2.7417542981625997,
-            "Relative error std deviation (%)": 3.1300282998386075,
-            "Relative error max (%)": 12.72727272727272,
+            "Relative error average (%)": 2.180057575266065,
+            "Relative error std deviation (%)": 2.478621780938009,
+            "Relative error max (%)": 9.090909090909083,
             "Relative error min (%)": 0.0,
-            "Runtime average (s)": 61.06911455198776,
-            "Runtime std deviation (s)": 156.30985205393486
+            "Runtime average (s)": 61.01202887712523,
+            "Runtime std deviation (s)": 146.6931137069952
         }
     }
 }

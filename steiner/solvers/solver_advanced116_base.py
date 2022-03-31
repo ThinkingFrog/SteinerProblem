@@ -69,7 +69,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
     def _findsave(self, graph: nx.Graph) -> None:
         gc = graph.copy()
 
-        if gc.number_of_edges() <= 1:
+        if gc.number_of_edges() < 1:
             return
 
         max_edge = (0, 0)
@@ -167,7 +167,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
                     + metric_closure_graph.get_edge_data(v, tr[1])["distance"]
                     + metric_closure_graph.get_edge_data(v, tr[2])["distance"]
                 )
-                if min_dist == 0 or min_paths_sum < min_dist:
+                if min_dist == 0 or min_paths_sum <= min_dist:
                     min_dist = min_paths_sum
                     min_vertex = v
 
