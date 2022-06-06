@@ -32,7 +32,7 @@ class STPParser:
         """
 
         graph_info = GraphInfo()
-        terminals: List[int] = list()
+        terminals: List[int] = []
         graph = nx.Graph()
 
         with graph_file.open("r") as gf:

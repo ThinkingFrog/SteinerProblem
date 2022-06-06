@@ -15,9 +15,9 @@ class SteinerResult:
     _stats_data: Dict[str, Dict[str, float]]
 
     def __init__(self) -> None:
-        self._graph_data = dict()
-        self._algorithm_data = dict()
-        self._stats_data = dict()
+        self._graph_data = {}
+        self._algorithm_data = {}
+        self._stats_data = {}
 
     def add(
         self,
@@ -28,8 +28,8 @@ class SteinerResult:
         valid: bool,
     ) -> None:
         if graph_info.name not in self._graph_data.keys():
-            self._graph_data[graph_info.name] = dict()
-            self._algorithm_data[graph_info.name] = dict()
+            self._graph_data[graph_info.name] = {}
+            self._algorithm_data[graph_info.name] = {}
 
             self._graph_data[graph_info.name]["Nodes"] = graph_info.nodes
             self._graph_data[graph_info.name]["Edges"] = graph_info.edges
@@ -37,9 +37,9 @@ class SteinerResult:
             self._graph_data[graph_info.name]["Expected cost"] = graph_info.cost
 
         if algorithm_name not in self._algorithm_data[graph_info.name]:
-            self._algorithm_data[graph_info.name][algorithm_name] = dict()
+            self._algorithm_data[graph_info.name][algorithm_name] = {}
         if algorithm_name not in self._stats_data:
-            self._stats_data[algorithm_name] = dict()
+            self._stats_data[algorithm_name] = {}
 
         self._algorithm_data[graph_info.name][algorithm_name][
             "Steiner tree cost"

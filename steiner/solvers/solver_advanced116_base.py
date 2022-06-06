@@ -28,7 +28,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
 
         # Step 4
 
-        additional_nodes = list()
+        additional_nodes = []
         while True:
             imc_mst = minimum_spanning_tree(induced_metric_closure)
             self._save_matrix: Dict[int, Dict[int, int]] = defaultdict(
@@ -102,7 +102,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
         voronoi_regions = defaultdict(list)
 
         mc_graph = metric_closure(graph)
-        nodes_closest_terminals = dict()
+        nodes_closest_terminals = {}
 
         for node in graph.nodes:
             if node in terminals:
@@ -124,7 +124,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
             voronoi_regions[term].append(term)
 
         # Double check that voronoi regions are correct
-        checked_nodes = list()
+        checked_nodes = []
         for l in voronoi_regions.values():
             for node in l:
                 if node in checked_nodes:
@@ -142,7 +142,7 @@ class SolverAdvanced116Base(SolverSimple116Base):
         triples: List[Tuple[int]],
         voronoi_regions: Dict[int, List[int]],
     ) -> TRIPLES_META_DATATYPE:
-        triples_meta = list()
+        triples_meta = []
 
         metric_closure_graph = metric_closure(graph)
         for node in metric_closure_graph.nodes:

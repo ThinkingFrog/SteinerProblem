@@ -78,14 +78,10 @@ class BaseSolver(ABC):
     def _remove_redundant_nodes(
         self, graph: nx.Graph, terminals: List[int]
     ) -> nx.Graph:
-        redundant_nodes = list()
+        redundant_nodes = []
 
         for node in dfs_postorder_nodes(graph, terminals[0]):
-            valid_neighbours = []
-
-            for n in graph[node]:
-                if n not in redundant_nodes:
-                    valid_neighbours.append(n)
+            valid_neighbours = [n for n in graph[node] if n not in redundant_nodes]
 
             if node not in terminals and len(valid_neighbours) == 1:
                 redundant_nodes.append(node)

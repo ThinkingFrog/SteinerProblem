@@ -23,7 +23,7 @@ class SolverSimple116Base(BaseSolver):
 
         # Step 3
 
-        additional_nodes = list()
+        additional_nodes = []
         while True:
             win, triple_meta = self._find_win(induced_metric_closure, triples_meta)
 
@@ -64,7 +64,7 @@ class SolverSimple116Base(BaseSolver):
     def _triples_closest_nodes(
         self, graph: nx.Graph, triples: List[Tuple[int]]
     ) -> TRIPLES_META_DATATYPE:
-        triples_meta = list()
+        triples_meta = []
 
         metric_closure_graph = metric_closure(graph)
 
@@ -97,11 +97,9 @@ class SolverSimple116Base(BaseSolver):
 
     def _contract_triple(self, graph: nx.Graph, triple: Tuple[int]) -> nx.Graph:
         intermediate_contracted_graph = self._contract_edge(graph, triple[0], triple[1])
-        contracted_graph = self._contract_edge(
+        return self._contract_edge(
             intermediate_contracted_graph, triple[0], triple[2]
         )
-
-        return contracted_graph
 
     def _find_win(
         self,

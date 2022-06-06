@@ -10,13 +10,12 @@ class Config:
         path_to_output.mkdir(parents=True, exist_ok=True)
         self._output = path_to_output
 
-        self._data = list()
+        self._data = []
 
         if not path_to_data.is_dir():
             self._data.append(path_to_data)
         else:
-            for graph_path in path_to_data.rglob("*.stp"):
-                self._data.append(graph_path)
+            self._data.extend(iter(path_to_data.rglob("*.stp")))
 
     def data(self) -> List[Path]:
         return self._data
